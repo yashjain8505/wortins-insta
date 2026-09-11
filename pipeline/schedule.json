@@ -1,5 +1,5 @@
 {
-  "_comment": "Cron keys are UTC (GitHub Actions). ALL slots = handoff (Telegram + shortcut + music). Change a slot to 'publish' to make it fully automatic.",
+  "_comment": "REFERENCE ONLY: the live schedule is Supabase pg_cron (cron.job rows gh-insta-*). Cron keys are UTC. ALL slots = handoff (Telegram + shortcut + music). Change a slot to 'publish' to make it fully automatic.",
   "30 2 * * *": {
     "ist": "08:00",
     "category": "india",
