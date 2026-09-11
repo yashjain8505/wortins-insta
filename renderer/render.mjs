@@ -81,8 +81,10 @@ const page = await browser.newPage();
 await page.setViewport({ width: 1080, height: 1350, deviceScaleFactor: 2 });
 
 for (let i = 0; i < pages.length; i++) {
-  await page.setContent(pages[i], { waitUntil: 'networkidle0' });
+  await page.setContent(pages[i], { waitUntil: 'domcontentloaded', timeout: 60000 });
   await page.evaluate(() => document.fonts.ready);
+  await page.evaluate(() => Promise.all(Array.from(document.images).filter(im => !im.complete).map(im => new Promise(res => { im.onload = im.onerror = res; }))));
+  await new Promise(res => setTimeout(res, 150));
   const file = path.join(outDir, `slide-${String(i + 1).padStart(2, '0')}.jpg`);
   await page.screenshot({ type: 'jpeg', quality: 92, path: file });
   console.log('rendered', file);

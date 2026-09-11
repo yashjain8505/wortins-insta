@@ -79,6 +79,10 @@ Reply with ONLY JSON:
     console.log(`caption:\n${story.caption}`);
     process.exit(0);
   } catch (e) {
+    if (String(e.message).includes('render.mjs')) {
+      console.error(`render failed (systemic, not a content problem): ${e.message}`);
+      process.exit(2);
+    }
     console.log(`  skipped: ${e.message}`);
   }
 }
