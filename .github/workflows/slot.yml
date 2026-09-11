@@ -1,7 +1,16 @@
 name: Publish slot
-run-name: "slot: ${{ inputs.category }} (${{ inputs.mode }})"
+run-name: "slot: ${{ inputs.category || format('cron {0}', github.event.schedule) }}"
 
 on:
+  schedule:
+    - cron: "30 2 * * *"   # 08:00 IST india (handoff)
+    - cron: "30 4 * * *"   # 10:00 IST india-tech
+    - cron: "30 6 * * *"   # 12:00 IST ai
+    - cron: "30 8 * * *"   # 14:00 IST fact (handoff)
+    - cron: "30 10 * * *"  # 16:00 IST global
+    - cron: "30 12 * * *"  # 18:00 IST vc
+    - cron: "30 14 * * *"  # 20:00 IST tech (handoff)
+    - cron: "30 16 * * *"  # 22:00 IST science-or-story
   workflow_dispatch:
     inputs:
       category:
@@ -10,7 +19,7 @@ on:
         type: choice
         options: [india, india-tech, global, ai, tech, vc, fact, science-or-story]
       mode:
-        description: publish = live post, dry = upload only, render-only = build but touch nothing
+        description: publish = live post, handoff = Telegram + shortcut, dry = upload only, render-only = build only
         required: true
         type: choice
         default: publish
@@ -26,9 +35,30 @@ concurrency:
 jobs:
   slot:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+
+      - name: Resolve slot (schedule -> pipeline/schedule.json, manual -> inputs)
+        id: slot
+        env:
+          EVT: ${{ github.event_name }}
+          CRON: ${{ github.event.schedule }}
+          IN_CAT: ${{ inputs.category }}
+          IN_MODE: ${{ inputs.mode }}
+        run: |
+          if [ "$EVT" = "workflow_dispatch" ]; then
+            echo "category=$IN_CAT" >> "$GITHUB_OUTPUT"
+            echo "mode=$IN_MODE" >> "$GITHUB_OUTPUT"
+            echo "manual: $IN_CAT ($IN_MODE)"
+          else
+            node -e '
+              const s = require("./pipeline/schedule.json")[process.env.CRON];
+              if (!s) { console.error("no slot configured for cron: " + process.env.CRON); process.exit(1); }
+              require("fs").appendFileSync(process.env.GITHUB_OUTPUT, `category=${s.category}\nmode=${s.mode}\n`);
+              console.log(`scheduled slot ${s.ist} IST -> ${s.category} (${s.mode})`);
+            '
+          fi
 
       - uses: actions/setup-node@v4
         with:
@@ -60,7 +90,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome
         working-directory: pipeline
-        run: node run-slot.mjs "${{ inputs.category }}" --${{ inputs.mode }}
+        run: node run-slot.mjs "${{ steps.slot.outputs.category }}" --${{ steps.slot.outputs.mode }}
 
       - name: Persist state (seen/published/facts-used)
         if: always()
@@ -70,6 +100,6 @@ jobs:
           git add pipeline/state
           if ! git diff --cached --quiet; then
             git pull --rebase --autostash origin main
-            git commit -m "state: ${{ inputs.category }} slot ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git commit -m "state: ${{ steps.slot.outputs.category }} slot ($(date -u +%Y-%m-%dT%H:%MZ))"
             git push
           fi

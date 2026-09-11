@@ -1,0 +1,11 @@
+{
+  "_comment": "Cron keys are UTC (GitHub Actions). Edit category/mode here; the workflow reads this file. handoff = Telegram + your shortcut (music), publish = fully automatic.",
+  "30 2 * * *":  { "ist": "08:00", "category": "india",            "mode": "handoff" },
+  "30 4 * * *":  { "ist": "10:00", "category": "india-tech",       "mode": "publish" },
+  "30 6 * * *":  { "ist": "12:00", "category": "ai",               "mode": "publish" },
+  "30 8 * * *":  { "ist": "14:00", "category": "fact",             "mode": "handoff" },
+  "30 10 * * *": { "ist": "16:00", "category": "global",           "mode": "publish" },
+  "30 12 * * *": { "ist": "18:00", "category": "vc",               "mode": "publish" },
+  "30 14 * * *": { "ist": "20:00", "category": "tech",             "mode": "handoff" },
+  "30 16 * * *": { "ist": "22:00", "category": "science-or-story", "mode": "publish" }
+}
