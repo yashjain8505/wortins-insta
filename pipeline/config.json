@@ -2,8 +2,8 @@
   "freshHours": 24,
   "freshHoursStory": 96,
   "maxCandidatesToScore": 60,
-  "scoreModel": "sonnet",
-  "composeModel": "opus",
+  "scoreModel": "opus",
+  "composeModel": "sonnet",
   "minPhotoBytes": 20000,
   "postsPerDay": 8,
   "dailyMix": {
