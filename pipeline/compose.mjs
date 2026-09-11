@@ -13,8 +13,9 @@ const wantCat = argOf('--category');
 const wantId = argOf('--id');
 
 const scored = JSON.parse(fs.readFileSync('work/scored.json', 'utf8'));
-const pool = scored.filter(c => (wantCat ? c.category === wantCat : true) && (wantId ? c.id === Number(wantId) : true));
+const pool = scored.filter(c => (wantCat ? c.category === wantCat : true) && (wantId ? c.id === Number(wantId) : true)).slice(0, 4);
 if (!pool.length) { console.error('no candidates match'); process.exit(1); }
+console.log(`compose: category=${wantCat ?? 'any'}, trying up to ${pool.length} candidates, model=${config.composeModel}`);
 
 const seenPath = 'state/seen.json';
 const seen = fs.existsSync(seenPath) ? JSON.parse(fs.readFileSync(seenPath, 'utf8')) : { keys: [] };

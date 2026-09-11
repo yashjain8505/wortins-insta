@@ -53,3 +53,4 @@ fs.writeFileSync('work/scored.json', JSON.stringify(scored, null, 2));
 console.log('\ntop 10:');
 for (const c of scored.slice(0, 10)) console.log(`  ${String(c.score).padStart(2)}  [${c.category}/${c.source}] ${c.title.slice(0, 80)} — ${c.reason}`);
 console.log('\nwrote work/scored.json');
+process.exit(0); // stalled feed sockets must not keep the process alive (CI hang, 2026-09-11)
