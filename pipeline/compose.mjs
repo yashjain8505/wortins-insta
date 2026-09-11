@@ -39,21 +39,21 @@ ARTICLE (from ${pick.source}): ${pick.title}
 ${article.text.slice(0, 4000)}
 
 Rules:
-- STYLE (applies to every field): NEVER use em dashes or en dashes. Use periods, commas or colons instead. Ranges use hyphens ("2-3"). Short sentences. Plain words an average person knows.
+- LANGUAGE (most important rule): write like you are telling a smart 14-year-old. Short, common words. One idea per sentence. Sentences under 12 words wherever possible. No jargon, no abbreviations unless everyone knows them (UPI, AI, GDP are fine). If a technical term is unavoidable, explain it in a few words right there. Give big numbers a human scale ("$500 million, about ₹4,200 crore"). Indian English, no slang. NEVER use em dashes or en dashes. Use periods, commas or colons instead. Ranges use hyphens ("2-3").
 - headline: max 12 words, punchy, plain English. Wrap THE key phrase (a number or the surprise) in ==double equals== for highlight. Exactly one highlight.
-- exactly 2 detail slides. Slide labels: short ("What happened", "Why it matters", "The catch", "What's next"...). heading: max 14 words, may use one ==highlight==. body: max 2 short sentences, conversational, no jargon.
+- 3 or 4 detail slides (4 when the article has enough real substance, 3 otherwise). Each slide = ONE idea. Order them as a story: what happened, the key detail or number, why it matters to a normal person, what happens next or the catch. Slide labels: short ("What happened", "The number", "Why it matters", "The catch", "What's next"). heading: max 14 words, may use one ==highlight==. body: max 2 short sentences, conversational, no jargon.
 - kicker: "<Topic> · ${new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}"
 - category: one word for the corner tag (e.g. India, World, Tech, Money).
 - caption: the second layer of the post, for people who want more. Build it EXACTLY in this order, blocks separated by blank lines:
   1) HOOK: one line, max 12 words, a surprising angle that is NOT the headline restated.
   2) SUBSTANCE: 2-3 short paragraphs of extra facts from the article that are NOT on the slides. Real numbers, context, the wild detail. It must teach something the slides did not.
   3) QUESTION: one question to the reader, ending with the emoji 👇
-  4) CTA: exactly "Follow @wortins.news for 2-3 stories a day that actually stick."
+  4) CTA: exactly "Follow @wortins.news for news that actually sticks."
   5) HASHTAGS: 7-9 on one line, mix of big and niche, always include #wortins.
 - source: "${pick.source}"
 
 Reply with ONLY JSON:
-{"type":"news","category":"...","kicker":"...","headline":"...","slides":[{"label":"...","heading":"...","body":"..."},{"label":"...","heading":"...","body":"..."}],"source":"...","caption":"..."}`;
+{"type":"news","category":"...","kicker":"...","headline":"...","slides":[{"label":"...","heading":"...","body":"..."},{"label":"...","heading":"...","body":"..."},{"label":"...","heading":"...","body":"..."}],"source":"...","caption":"..."}`;
 
     const raw = await askClaude(prompt, { model: config.composeModel });
     const story = extractJson(raw);
@@ -61,7 +61,7 @@ Reply with ONLY JSON:
     const bad =
       story.type !== 'news' ? 'type' :
       !story.headline || story.headline.length > 110 ? 'headline' :
-      !Array.isArray(story.slides) || story.slides.length !== 2 ? 'slides' :
+      !Array.isArray(story.slides) || story.slides.length < 3 || story.slides.length > 4 ? 'slides' :
       story.slides.some(s => !s.label || !s.heading || !s.body || s.heading.length > 130 || s.body.length > 260) ? 'slide fields' :
       !story.source ? 'source' : null;
     if (bad) throw new Error(`story validation failed: ${bad}`);

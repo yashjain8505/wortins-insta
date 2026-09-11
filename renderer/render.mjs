@@ -28,20 +28,43 @@ const dots = (n, active) =>
 
 const counter = (i, n) => `${String(i).padStart(2, '0')} / ${String(n).padStart(2, '0')}`;
 
-function photoDataUri() {
-  if (!story.photo) return '';
-  if (/^https?:\/\//.test(story.photo)) return story.photo;
-  const p = path.isAbsolute(story.photo) ? story.photo : path.join(path.dirname(path.resolve(storyPath)), story.photo);
+function photoDataUri(rel) {
+  if (!rel) return '';
+  if (/^https?:\/\//.test(rel)) return rel;
+  const p = path.isAbsolute(rel) ? rel : path.join(path.dirname(path.resolve(storyPath)), rel);
   return 'data:image/jpeg;base64,' + fs.readFileSync(p).toString('base64');
 }
 
 const isNews = story.type === 'news';
-const total = 1 + (story.slides?.length ?? 0) + 1; // cover + details + closer
-const photo = isNews ? photoDataUri() : '';
+const isRoundup = story.type === 'roundup';
+const total = isRoundup ? 1 + story.items.length + 1 : 1 + (story.slides?.length ?? 0) + 1; // cover + middle + closer
+const photo = isNews ? photoDataUri(story.photo) : '';
 const logoUri = (f) => 'data:image/png;base64,' + fs.readFileSync(path.join(__dirname, 'assets', f)).toString('base64');
 const common = { BRAND: esc(brand.name), HANDLE: esc(brand.handle), LOGO_CREAM: logoUri('logo-cream.png'), LOGO_DARK: logoUri('logo-dark.png') };
 
 const pages = [];
+if (isRoundup) {
+  // roundup: cover lists the items, then one full-photo slide per news item, then closer
+  pages.push(fill(tpl('roundup-cover.html'), {
+    ...common,
+    TAG: esc(story.category ?? 'Today'),
+    HEADLINE: rich(story.headline),
+    LIST: story.items.map((it, i) => `<div class="item"><span class="num">${i + 1}</span><span>${esc(it.short ?? it.headline)}</span></div>`).join(''),
+  }));
+  story.items.forEach((it, i) => {
+    pages.push(fill(tpl('roundup-item.html'), {
+      ...common,
+      NUM: `${i + 1} / ${story.items.length}`,
+      TAG: esc(it.category ?? ''),
+      HEADLINE: rich(it.headline),
+      LINE: esc(it.line ?? ''),
+      SOURCE: esc(it.source ?? ''),
+      CREDIT: esc(it.photoCredit ?? ''),
+      PHOTO: photoDataUri(it.photo),
+      DOTS: dots(total, i + 1),
+    }));
+  });
+} else {
 // cover
 pages.push(fill(tpl(isNews ? 'news-cover.html' : 'facts-cover.html'), {
   ...common,
@@ -65,6 +88,7 @@ pages.push(fill(tpl(isNews ? 'news-cover.html' : 'facts-cover.html'), {
     CREDIT: esc(story.photoCredit ?? ''),
   }));
 });
+}
 // closer
 pages.push(fill(tpl('closer.html'), {
   ...common,

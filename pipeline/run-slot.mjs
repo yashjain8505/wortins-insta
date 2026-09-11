@@ -20,6 +20,9 @@ const before = newestQueueDir();
 
 if (category === 'fact') {
   run('node', ['run-fact.mjs']);
+} else if (category === 'roundup-morning' || category === 'roundup-evening') {
+  run('node', ['curate.mjs']);
+  run('node', ['roundup.mjs', '--edition', category.split('-')[1]]);
 } else {
   const tryCats = category === 'science-or-story' ? ['science', 'story'] : [category];
   run('node', ['curate.mjs']);

@@ -21,6 +21,7 @@ const sbHeaders = { Authorization: `Bearer ${KEY}`, apikey: KEY };
 
 const MUSIC = {
   india: 'Minimal cinematic beat. In IG music search: "cinematic ambient"',
+  roundup: 'News-desk energy. In IG music search: "cinematic ambient" or "upbeat lofi"',
   global: 'Minimal cinematic beat. In IG music search: "cinematic ambient"',
   ai: 'Lo-fi chill beat. In IG music search: "lofi"',
   tech: 'Lo-fi chill beat. In IG music search: "lofi"',
@@ -30,7 +31,7 @@ const MUSIC = {
   science: 'Dreamy ambient. In IG music search: "dreamy ambient" or "slowed reverb"',
   story: 'Dreamy ambient. In IG music search: "dreamy ambient"',
 };
-const cat = (story.type === 'fact') ? 'fact' : (story.category ?? '').toLowerCase();
+const cat = story.type === 'fact' ? 'fact' : story.type === 'roundup' ? 'roundup' : (story.category ?? '').toLowerCase();
 const music = MUSIC[cat] ?? MUSIC[(story.type === 'news' ? 'india' : 'fact')] ?? 'Pick a lo-fi beat';
 
 async function put(objectPath, body, contentType) {
