@@ -9,6 +9,7 @@ const category = process.argv[2];
 if (!category) { console.error('usage: node run-slot.mjs <category> [--publish|--dry]'); process.exit(1); }
 const mode = process.argv.includes('--publish') ? 'publish' : process.argv.includes('--dry') ? 'dry' : 'render-only';
 
+fs.mkdirSync('queue', { recursive: true });
 const run = (cmd, args) => execFileSync(cmd, args, { stdio: 'inherit' });
 const newestQueueDir = () => fs.readdirSync('queue')
   .filter(d => fs.existsSync(path.join('queue', d, 'story.json')))
