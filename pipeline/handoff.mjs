@@ -53,6 +53,7 @@ const { execFileSync } = await import('node:child_process');
 const zipPath = path.join(dir, 'slides.zip');
 if (fs.existsSync(zipPath)) fs.unlinkSync(zipPath);
 execFileSync('zip', ['-j', '-q', zipPath, ...slides.map(f => path.join(dir, f))]);
+const zipUrl = await put(`handoff/${runId}.zip`, fs.readFileSync(zipPath), 'application/zip');
 await put('handoff/latest.zip', fs.readFileSync(zipPath), 'application/zip');
 await put('handoff/latest-caption.txt', story.caption ?? '', 'text/plain; charset=utf-8');
 console.log(`uploaded ${urls.length} slides + manifest + latest.zip + latest-caption.txt`);
@@ -68,7 +69,7 @@ async function tg(method, payload) {
 const headline = String(story.headline ?? '').replace(/==/g, '');
 await tg('sendPhoto', {
   chat_id: CHAT, photo: urls[0],
-  caption: `🗞 Post ready: ${headline}\n\n🎵 ${music}\n\n👉 Tap your "Wortins Post" shortcut: it saves the slides + copies the caption, then opens Instagram.`,
+  caption: `🗞 Post ready: ${headline}\n\n🎵 ${music}\n\n👉 Tap your "Wortins Post" shortcut: it saves the slides + copies the caption, then opens Instagram.\n\n(Missed it and a newer one arrived? This post's slides: ${zipUrl})`,
 });
 await tg('sendMessage', { chat_id: CHAT, text: story.caption ?? '(no caption)' });
 console.log('Telegram alert sent');
