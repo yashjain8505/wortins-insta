@@ -1,0 +1,132 @@
+{
+  "artboards": [
+    {
+      "file": "Main.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "Facts — cover",
+      "page": "page-1"
+    },
+    {
+      "file": "ElectricDetail.dc.html",
+      "x": 0,
+      "y": 1510,
+      "w": 1080,
+      "h": 1350,
+      "title": "Facts — detail",
+      "page": "page-1"
+    },
+    {
+      "file": "NewsCover.dc.html",
+      "x": 1200,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "News — cover (photo)",
+      "page": "page-1"
+    },
+    {
+      "file": "NewsDetail.dc.html",
+      "x": 1200,
+      "y": 1510,
+      "w": 1080,
+      "h": 1350,
+      "title": "News — detail (photo)",
+      "page": "page-1"
+    },
+    {
+      "file": "BoldCover.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "A · Bold — cover",
+      "page": "page-2"
+    },
+    {
+      "file": "BoldDetail.dc.html",
+      "x": 0,
+      "y": 1510,
+      "w": 1080,
+      "h": 1350,
+      "title": "A · Bold — detail",
+      "page": "page-2"
+    },
+    {
+      "file": "PaperCover.dc.html",
+      "x": 1200,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "B · Paper — cover",
+      "page": "page-2"
+    },
+    {
+      "file": "PaperDetail.dc.html",
+      "x": 1200,
+      "y": 1510,
+      "w": 1080,
+      "h": 1350,
+      "title": "B · Paper — detail",
+      "page": "page-2"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "note-locked",
+      "x": 0,
+      "y": -240,
+      "w": 330,
+      "page": "page-1",
+      "text": "FACTS — locked: the Electric skin you picked.\nRotated sticker tag, acid highlight on the punchline."
+    },
+    {
+      "id": "note-news",
+      "x": 1200,
+      "y": -300,
+      "w": 330,
+      "page": "page-1",
+      "text": "NEWS — real photo, dark gradient, same Electric brand on top.\nIn production the photo comes from the source article (credited) or licensed stock.\nThis one: Wikimedia Commons, CC."
+    },
+    {
+      "id": "note-brand",
+      "x": -420,
+      "y": 0,
+      "w": 340,
+      "page": "page-1",
+      "text": "\"BRIEF.\" is still a placeholder name — swaps everywhere once you pick the real handle.\nHeadlines are sample copy."
+    },
+    {
+      "id": "dir-bold",
+      "x": 0,
+      "y": -200,
+      "w": 330,
+      "page": "page-2",
+      "text": "OPTION A — Bold editorial (not chosen)"
+    },
+    {
+      "id": "dir-paper",
+      "x": 1200,
+      "y": -200,
+      "w": 330,
+      "page": "page-2",
+      "text": "OPTION B — Paper (not chosen)"
+    }
+  ],
+  "launch": {
+    "view": "canvas",
+    "page": "page-1"
+  },
+  "pages": [
+    {
+      "id": "page-1",
+      "name": "The system"
+    },
+    {
+      "id": "page-2",
+      "name": "Unchosen sketches"
+    }
+  ]
+}

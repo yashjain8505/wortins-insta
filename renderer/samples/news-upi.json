@@ -1,0 +1,22 @@
+{
+  "type": "news",
+  "category": "India",
+  "kicker": "Economy \u00b7 10 Sep 2026",
+  "headline": "India's UPI just crossed ==20 billion== payments a month",
+  "photo": "upi.jpg",
+  "photoCredit": "Photo: Wikimedia Commons",
+  "slides": [
+    {
+      "label": "What happened",
+      "heading": "The QR sticker at the tea stall did this, ==not the bank.==",
+      "body": "Small merchants now drive over half of all UPI volume. The card machine never reached them. The free sticker did."
+    },
+    {
+      "label": "Why it matters",
+      "heading": "That is more than ==Visa and Mastercard== settle worldwide, combined.",
+      "body": "Ten years ago this number was zero. India built the world's largest real-time payments network in a decade."
+    }
+  ],
+  "source": "NPCI",
+  "caption": "Your chaiwala now processes more payments than most bank branches. Not a joke.\n\nUPI just crossed 20 billion transactions in one month. For scale: Visa and Mastercard combined settle fewer payments worldwide.\n\nThe wild part is who did it. Over half the volume comes from small merchants. Street vendors, kirana stores, tea stalls. Card machines never reached them, a free QR sticker did.\n\nTen years ago this number was zero.\n\nWhere is the most unexpected place you have scanned UPI? \ud83d\udc47\n\nFollow @wortins.news for 2-3 stories a day that actually stick.\n\n#UPI #digitalindia #fintech #indianeconomy #cashless #indianews #madeinindia #wortins"
+}

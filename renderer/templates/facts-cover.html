@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  .slide { width: 1080px; height: 1350px; background: #9C2B1D; color: #F3ECDA; display: flex; flex-direction: column; justify-content: space-between; padding: 72px 64px; font-family: 'Space Grotesk', Arial, sans-serif; overflow: hidden; }
+  .top { display: flex; justify-content: flex-start; align-items: center; }
+  .logo { height: 46px; }
+  .mid { display: flex; flex-direction: column; gap: 44px; align-items: flex-start; }
+  .tag { background: #F3ECDA; color: #9C2B1D; font-weight: 700; font-size: 26px; letter-spacing: 2px; padding: 14px 24px; text-transform: uppercase; transform: rotate(-3deg); }
+  .headline { font-weight: 700; font-size: 88px; line-height: 1.22; }
+  .hl { background: #F3ECDA; color: #9C2B1D; padding: 2px 16px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+  .bottom { display: flex; justify-content: space-between; align-items: center; }
+  .muted { font-size: 24px; font-weight: 500; color: rgba(243,236,218,0.68); }
+  .swipe { display: flex; align-items: center; gap: 20px; }
+  .arrow { width: 72px; height: 72px; background: #F3ECDA; color: #9C2B1D; display: flex; align-items: center; justify-content: center; font-size: 40px; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="top"><img class="logo" src="{{LOGO_CREAM}}"></div>
+  <div class="mid">
+    <div class="tag">{{TAG}}</div>
+    <div class="headline">{{HEADLINE}}</div>
+  </div>
+  <div class="bottom">
+    <div class="muted">{{HANDLE}}</div>
+    <div class="swipe"><div class="muted">swipe</div><div class="arrow">→</div></div>
+  </div>
+</div>
+</body>
+</html>

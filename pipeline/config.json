@@ -1,0 +1,19 @@
+{
+  "freshHours": 24,
+  "freshHoursStory": 96,
+  "maxCandidatesToScore": 60,
+  "scoreModel": "sonnet",
+  "composeModel": "opus",
+  "minPhotoBytes": 20000,
+  "postsPerDay": 8,
+  "dailyMix": {
+    "india": 1,
+    "india-tech": 1,
+    "global": 1,
+    "ai": 1,
+    "tech": 1,
+    "vc": 1,
+    "fact": 1,
+    "science-or-story": 1
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "octopus-hearts",
+    "type": "fact",
+    "category": "Did you know?",
+    "headline": "Octopuses have three hearts — ==and two of them stop== when they swim.",
+    "slides": [
+      { "label": "The weird part", "heading": "The main heart shuts off mid-swim — so octopuses prefer to crawl.", "body": "Two hearts pump blood to the gills. The third serves the body — and it pauses under the strain of swimming. Crawling simply costs less energy." },
+      { "label": "One more thing", "heading": "Their blood is blue — copper does the job iron does in ours.", "body": "Octopus blood uses haemocyanin, a copper-based molecule, to carry oxygen in cold, low-oxygen water. Copper makes it blue." }
+    ],
+    "source": "Smithsonian Ocean",
+    "caption": "Three hearts. Blue blood. And they'd still rather walk.\nFollow for one wild fact every day.\n#didyouknow #octopus #oceanfacts #marinelife #sciencefacts #animalfacts #factsdaily #learnsomethingnew #nature #wildlife"
+  },
+  {
+    "slug": "honey-never-spoils",
+    "type": "fact",
+    "category": "Did you know?",
+    "headline": "Archaeologists found ==3,000-year-old honey== in Egyptian tombs. Still edible.",
+    "slides": [
+      { "label": "How", "heading": "Honey is too dry and too acidic for bacteria to survive in.", "body": "Bees fan the nectar until almost all its water is gone, and add an enzyme that makes it mildly antiseptic. Nothing that spoils food can live there." },
+      { "label": "The catch", "heading": "It only lasts forever ==if the jar stays sealed==.", "body": "Let moisture in and honey can ferment like anything else. The tomb jars survived because they were shut tight for three millennia." }
+    ],
+    "source": "Smithsonian Magazine",
+    "caption": "The only food in your kitchen with no expiry date.\nFollow for one wild fact every day.\n#didyouknow #honey #foodfacts #ancientegypt #sciencefacts #factsdaily #history #learnsomethingnew #food #facts"
+  },
+  {
+    "slug": "eiffel-tower-grows",
+    "type": "fact",
+    "category": "Did you know?",
+    "headline": "The Eiffel Tower gets ==15 cm taller== every summer.",
+    "slides": [
+      { "label": "The physics", "heading": "Iron expands in heat — 7,300 tonnes of it expands a lot.", "body": "On hot days the metal swells and the tower grows up to 15 centimetres. In winter it shrinks right back." },
+      { "label": "Bonus", "heading": "The sun also makes it ==lean away== from itself.", "body": "The side facing the sun expands more than the shaded side, tilting the top a few centimetres away from the sun as it moves." }
+    ],
+    "source": "toureiffel.paris",
+    "caption": "Paris's most famous landmark has a summer growth spurt.\nFollow for one wild fact every day.\n#didyouknow #eiffeltower #paris #sciencefacts #physics #factsdaily #travel #learnsomethingnew #engineering #facts"
+  },
+  {
+    "slug": "banana-berry",
+    "type": "fact",
+    "category": "Did you know?",
+    "headline": "Botanically, a banana is ==a berry== — and a strawberry isn't.",
+    "slides": [
+      { "label": "The rule", "heading": "A berry must grow from one flower with one ovary. Bananas qualify.", "body": "So do grapes, tomatoes, kiwis and chillies. The 'berry' in strawberry is marketing, not botany." },
+      { "label": "So what's a strawberry?", "heading": "An 'accessory fruit' — the red part isn't even the fruit.", "body": "The actual fruits are the tiny yellow seeds on the outside. The juicy red flesh is the swollen base of the flower." }
+    ],
+    "source": "Encyclopaedia Britannica",
+    "caption": "Everything you knew about berries is wrong.\nFollow for one wild fact every day.\n#didyouknow #foodfacts #botany #sciencefacts #factsdaily #fruit #learnsomethingnew #nature #biology #facts"
+  }
+]

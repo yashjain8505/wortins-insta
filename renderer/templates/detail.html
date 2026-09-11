@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  .slide { width: 1080px; height: 1350px; background: #F3ECDA; color: #1B1712; display: flex; flex-direction: column; justify-content: space-between; padding: 72px 72px 64px 72px; font-family: 'Space Grotesk', Arial, sans-serif; overflow: hidden; }
+  .top { display: flex; justify-content: flex-start; align-items: center; }
+  .logo { height: 42px; }
+  .content { display: flex; flex-direction: column; gap: 40px; align-items: flex-start; }
+  .label { background: #9C2B1D; color: #F3ECDA; font-weight: 700; font-size: 24px; letter-spacing: 3px; padding: 12px 20px; text-transform: uppercase; }
+  .heading { font-weight: 700; font-size: 66px; line-height: 1.14; color: #1B1712; }
+  .heading .hl { background: #9C2B1D; color: #F3ECDA; padding: 0 14px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+  .rule { width: 120px; height: 6px; background: #9C2B1D; }
+  .body { font-size: 31px; line-height: 1.6; color: #514A40; max-width: 900px; }
+  .bottom { display: flex; justify-content: space-between; align-items: center; }
+  .dots { display: flex; gap: 14px; align-items: center; }
+  .dot { width: 16px; height: 16px; background: rgba(27,23,18,0.15); }
+  .dot.on { background: #9C2B1D; }
+  .muted { font-size: 22px; font-weight: 500; color: #8A8171; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="top"><img class="logo" src="{{LOGO_DARK}}"></div>
+  <div class="content">
+    <div class="label">{{LABEL}}</div>
+    <div class="heading">{{HEADING}}</div>
+    <div class="rule"></div>
+    <div class="body">{{BODY}}</div>
+  </div>
+  <div class="bottom">
+    <div class="dots">{{DOTS}}</div>
+    <div class="muted">{{SOURCE}}</div>
+  </div>
+</div>
+</body>
+</html>

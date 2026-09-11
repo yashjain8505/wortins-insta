@@ -1,0 +1,134 @@
+{
+ "india": [
+  {
+   "name": "The Hindu",
+   "url": "https://www.thehindu.com/news/national/feeder/default.rss"
+  },
+  {
+   "name": "Indian Express",
+   "url": "https://indianexpress.com/section/india/feed/"
+  },
+  {
+   "name": "LiveMint",
+   "url": "https://www.livemint.com/rss/news"
+  },
+  {
+   "name": "Hindustan Times",
+   "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml"
+  }
+ ],
+ "global": [
+  {
+   "name": "BBC",
+   "url": "https://feeds.bbci.co.uk/news/world/rss.xml"
+  },
+  {
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/world/rss"
+  },
+  {
+   "name": "Al Jazeera",
+   "url": "https://www.aljazeera.com/xml/rss/all.xml"
+  },
+  {
+   "name": "NPR",
+   "url": "https://feeds.npr.org/1004/rss.xml"
+  }
+ ],
+ "ai": [
+  {
+   "name": "TechCrunch",
+   "url": "https://techcrunch.com/category/artificial-intelligence/feed/"
+  },
+  {
+   "name": "VentureBeat",
+   "url": "https://venturebeat.com/category/ai/feed/"
+  },
+  {
+   "name": "MIT Tech Review",
+   "url": "https://www.technologyreview.com/feed/"
+  },
+  {
+   "name": "The Decoder",
+   "url": "https://the-decoder.com/feed/"
+  }
+ ],
+ "story": [
+  {
+   "name": "The Better India",
+   "url": "https://www.thebetterindia.com/feed/"
+  }
+ ],
+ "india-tech": [
+  {
+   "name": "Inc42",
+   "url": "https://inc42.com/feed/"
+  },
+  {
+   "name": "YourStory",
+   "url": "https://yourstory.com/feed"
+  },
+  {
+   "name": "ET Tech",
+   "url": "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms"
+  },
+  {
+   "name": "MediaNama",
+   "url": "https://medianama.com/feed/"
+  }
+ ],
+ "tech": [
+  {
+   "name": "The Verge",
+   "url": "https://www.theverge.com/rss/index.xml"
+  },
+  {
+   "name": "Ars Technica",
+   "url": "https://feeds.arstechnica.com/arstechnica/index"
+  },
+  {
+   "name": "Engadget",
+   "url": "https://www.engadget.com/rss.xml"
+  },
+  {
+   "name": "Wired",
+   "url": "https://www.wired.com/feed/rss"
+  }
+ ],
+ "vc": [
+  {
+   "name": "TechCrunch Startups",
+   "url": "https://techcrunch.com/category/startups/feed/"
+  },
+  {
+   "name": "TechCrunch Venture",
+   "url": "https://techcrunch.com/category/venture/feed/"
+  },
+  {
+   "name": "Crunchbase News",
+   "url": "https://news.crunchbase.com/feed/"
+  },
+  {
+   "name": "Sifted",
+   "url": "https://sifted.eu/feed"
+  }
+ ],
+ "science": [
+  {
+   "name": "ScienceAlert",
+   "url": "https://www.sciencealert.com/feed"
+  },
+  {
+   "name": "Live Science",
+   "url": "https://www.livescience.com/feeds/all"
+  },
+  {
+   "name": "Interesting Engineering",
+   "url": "https://interestingengineering.com/feed"
+  },
+  {
+   "name": "Smithsonian",
+   "url": "https://www.smithsonianmag.com/rss/latest_articles/"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+node_modules/
+.env
+.DS_Store
+*.log
+pipeline/queue/
+pipeline/work/
+renderer/out/
+renderer/samples/*.jpg
+design/insta-news-carousels.html
+design/newsphoto.jpg

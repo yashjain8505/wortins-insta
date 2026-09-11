@@ -1,0 +1,70 @@
+name: Publish slot
+run-name: "slot: ${{ inputs.category }} (${{ inputs.mode }})"
+
+on:
+  workflow_dispatch:
+    inputs:
+      category:
+        description: Content category for this slot
+        required: true
+        type: choice
+        options: [india, india-tech, global, ai, tech, vc, fact, science-or-story]
+      mode:
+        description: publish = live post, dry = upload only, render-only = build but touch nothing
+        required: true
+        type: choice
+        default: publish
+        options: [publish, dry, render-only]
+
+concurrency:
+  group: insta-slot
+  cancel-in-progress: false
+
+jobs:
+  slot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: |
+            pipeline/package-lock.json
+            renderer/package-lock.json
+
+      - name: Install deps (system Chrome, no bundled Chromium)
+        env:
+          PUPPETEER_SKIP_DOWNLOAD: "1"
+        run: |
+          npm ci --prefix pipeline
+          npm ci --prefix renderer
+
+      - name: Install Claude CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Run slot
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: me
+          SUPABASE_URL: https://zrjbzowohsgjbrhsldfi.supabase.co
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          SUPABASE_BUCKET: insta-slides
+          PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome
+        working-directory: pipeline
+        run: node run-slot.mjs "${{ inputs.category }}" --${{ inputs.mode }}
+
+      - name: Persist state (seen/published/facts-used)
+        if: always()
+        run: |
+          git config user.name "insta-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add pipeline/state
+          if ! git diff --cached --quiet; then
+            git pull --rebase --autostash origin main
+            git commit -m "state: ${{ inputs.category }} slot ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push
+          fi
