@@ -47,7 +47,15 @@ const manifest = { runId, headline: story.headline, caption: story.caption ?? ''
 const manifestBody = JSON.stringify(manifest, null, 1);
 await put(`handoff/${runId}.json`, manifestBody, 'application/json');
 await put('handoff/latest.json', manifestBody, 'application/json');
-console.log(`uploaded ${urls.length} slides + manifest (handoff/latest.json updated)`);
+
+// Zip + caption.txt: lets the iOS Shortcut stay a simple linear chain (no variables).
+const { execFileSync } = await import('node:child_process');
+const zipPath = path.join(dir, 'slides.zip');
+if (fs.existsSync(zipPath)) fs.unlinkSync(zipPath);
+execFileSync('zip', ['-j', '-q', zipPath, ...slides.map(f => path.join(dir, f))]);
+await put('handoff/latest.zip', fs.readFileSync(zipPath), 'application/zip');
+await put('handoff/latest-caption.txt', story.caption ?? '', 'text/plain; charset=utf-8');
+console.log(`uploaded ${urls.length} slides + manifest + latest.zip + latest-caption.txt`);
 
 async function tg(method, payload) {
   const res = await fetch(`https://api.telegram.org/bot${TG}/${method}`, {
