@@ -7,7 +7,7 @@ import { execFileSync } from 'node:child_process';
 
 const category = process.argv[2];
 if (!category) { console.error('usage: node run-slot.mjs <category> [--publish|--dry]'); process.exit(1); }
-const mode = process.argv.includes('--publish') ? 'publish' : process.argv.includes('--dry') ? 'dry' : 'render-only';
+const mode = process.argv.includes('--publish') ? 'publish' : process.argv.includes('--handoff') ? 'handoff' : process.argv.includes('--dry') ? 'dry' : 'render-only';
 
 fs.mkdirSync('queue', { recursive: true });
 const run = (cmd, args) => execFileSync(cmd, args, { stdio: 'inherit' });
@@ -35,5 +35,6 @@ const dir = newestQueueDir();
 if (!dir || dir === before) { console.error('no new carousel produced'); process.exit(1); }
 console.log(`carousel ready: queue/${dir} (mode: ${mode})`);
 if (mode === 'publish') run('node', ['publish.mjs', path.join('queue', dir)]);
+else if (mode === 'handoff') run('node', ['handoff.mjs', path.join('queue', dir)]);
 else if (mode === 'dry') run('node', ['publish.mjs', path.join('queue', dir), '--dry']);
 run('node', ['review.mjs']);

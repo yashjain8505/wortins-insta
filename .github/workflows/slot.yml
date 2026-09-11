@@ -14,7 +14,7 @@ on:
         required: true
         type: choice
         default: publish
-        options: [publish, dry, render-only]
+        options: [publish, handoff, dry, render-only]
 
 concurrency:
   group: insta-slot
@@ -53,6 +53,8 @@ jobs:
           SUPABASE_URL: https://zrjbzowohsgjbrhsldfi.supabase.co
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
           SUPABASE_BUCKET: insta-slides
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome
         working-directory: pipeline
         run: node run-slot.mjs "${{ inputs.category }}" --${{ inputs.mode }}
