@@ -16,6 +16,9 @@ on:
         default: publish
         options: [publish, handoff, dry, render-only]
 
+permissions:
+  contents: write
+
 concurrency:
   group: insta-slot
   cancel-in-progress: false
