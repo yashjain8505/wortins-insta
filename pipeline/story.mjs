@@ -62,7 +62,9 @@ SOURCE TEXT (Wikipedia: ${wiki.title}):
 ${text}
 
 HOW TO MAKE IT GREAT (this is what separates a post people share from one they scroll past):
-- First, list the 6-8 most surprising CONCRETE facts in the text: exact numbers, dates, names, places, quotes, decisions, near-misses. Put them in "facts". Build the slides only from those.
+- First, list the 6-8 most surprising CONCRETE facts in the text: exact numbers, dates, names, places, quotes, decisions, near-misses. Put them in "facts", RANKED best first (best = the one most likely to make a reader say "wait, what?").
+- The slides get the BEST facts. Facts 1-3 must appear on the slides. The caption only gets the leftovers. Never bury the best fact in the caption. A quirky detail (a rejected name, a job rejection, a wife's condition, a toilet paper company owning the name) is often the best fact: give it its own slide.
+- Do not spend a slide repeating the fact already in the headline. The cover told it; move on.
 - Every slide must carry at least one concrete detail. Never write a summary sentence like "they chose a hard problem" or "the company grew". Say what was risked, what was said, what it cost, how close it came to dying.
 - Tension is the story. Show the moment it could have failed: the rejection, the bankruptcy scare, the bet everyone doubted, the deal that almost did not happen.
 - The LAST slide is always THEN vs NOW: the smallest number at the start against the biggest number today, from the text (e.g. "$40,000 in 1993. Over $3 trillion today."). Contrast is the payoff.
@@ -72,7 +74,7 @@ HOW TO MAKE IT GREAT (this is what separates a post people share from one they s
 Rules:
 - LANGUAGE: write like you are telling a smart 14-year-old. Short common words. One idea per sentence. Sentences under 12 words wherever possible. No jargon. Give big numbers a human scale. Indian English. NEVER use em dashes or en dashes. Use periods, commas or colons. Ranges use hyphens.
 - headline: max 12 words, the hook, built on the single most surprising fact. Wrap THE key phrase in ==double equals==. Exactly one highlight.
-- 4 detail slides, each ONE beat of the story in order, ending with THEN vs NOW. Labels: short ("The start", "The rejection", "30 days from dead", "The bet", "The quote", "Then vs now"). heading: max 14 words, may use one ==highlight==. body: max 2 short sentences, both carrying a concrete detail.
+- 4 detail slides, each ONE beat, in story order, ending with THEN vs NOW. Labels: short ("The name", "The rejection", "30 days from dead", "The bet", "The quote", "Then vs now"). heading: max 14 words, may use one ==highlight==. body: max 2 short sentences, both carrying a concrete detail.
 - category: exactly "${TYPE_LABEL[pick.type]}".
 - kicker: a short time and place anchor from the text, e.g. "1993 · Santa Clara".
 - caption, blocks separated by blank lines: 1) HOOK one line max 12 words, not the headline restated; 2) SUBSTANCE 2-3 short paragraphs with the best facts NOT on the slides; 3) one question to the reader ending with 👇; 4) exactly "Follow @wortins.news for AI and startup news that actually sticks."; 5) 7-9 hashtags on one line including #ai #startups #wortins.

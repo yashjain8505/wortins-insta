@@ -70,10 +70,10 @@ jobs:
       - name: Install Claude CLI
         run: npm install -g @anthropic-ai/claude-code
 
-      - name: Random delay (0-14 min, so posts never land at the same minute every day)
-        if: github.event_name != 'workflow_dispatch' || inputs.mode == 'handoff' || inputs.mode == 'publish'
+      - name: Random delay (crons fire 10 min early; wait 0-20 min so each day lands at a different minute, before or after the nominal time)
+        if: inputs.mode == 'handoff' || inputs.mode == 'publish'
         run: |
-          d=$(( RANDOM % 840 ))
+          d=$(( (RANDOM * 32768 + RANDOM) % 1200 ))
           echo "waiting ${d}s"
           sleep $d
 

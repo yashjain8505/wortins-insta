@@ -1,5 +1,5 @@
 {
-  "_comment": "REFERENCE ONLY: live schedule is Supabase pg_cron (gh-insta-*). Keys UTC. AI + startups. 2 briefs, 5 news, 3 evergreen stories. All handoff.",
+  "_comment": "REFERENCE ONLY: live schedule is Supabase pg_cron (gh-insta-*). Crons fire 10 min BEFORE the nominal IST time; the run then waits a random 0-20 min. All handoff.",
   "0 2 * * *": {
     "ist": "07:30",
     "category": "roundup-morning",
