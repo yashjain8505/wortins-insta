@@ -32,7 +32,7 @@ for (const pick of pool) {
     if (!photos.length) throw new Error('no usable image');
     console.log(`  photos: ${photos.length}`);
 
-    const prompt = `You write Instagram news carousels for an Indian general audience. Turn this article into a carousel story. Use ONLY facts stated in the article text below — never invent numbers, names or claims. If the article lacks a concrete hook, still write the strongest honest version.
+    const prompt = `You write Instagram carousels about AI and startups for founders, builders, investors and people who work in tech (India and global). Turn this article into a carousel story. Use ONLY facts stated in the article text below — never invent numbers, names or claims. If the article lacks a concrete hook, still write the strongest honest version.
 
 ARTICLE (from ${pick.source}): ${pick.title}
 ${article.text.slice(0, 4000)}
@@ -47,8 +47,8 @@ Rules:
   1) HOOK: one line, max 12 words, a surprising angle that is NOT the headline restated.
   2) SUBSTANCE: 2-3 short paragraphs of extra facts from the article that are NOT on the slides. Real numbers, context, the wild detail. It must teach something the slides did not.
   3) QUESTION: one question to the reader, ending with the emoji 👇
-  4) CTA: exactly "Follow @wortins.news for news that actually sticks."
-  5) HASHTAGS: 7-9 on one line, mix of big and niche, always include #wortins.
+  4) CTA: exactly "Follow @wortins.news for AI and startup news that actually sticks."
+  5) HASHTAGS: 7-9 on one line, mix of big and niche, always include #ai #startups #wortins.
 - source: "${pick.source}"
 
 Reply with ONLY JSON:

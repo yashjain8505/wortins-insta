@@ -41,7 +41,7 @@ for (const c of scored.filter(c => c.score >= 5 && !seen.keys.includes(c.key))) 
 if (items.length < 4) { console.error(`only ${items.length} usable items, need 4+`); process.exit(1); }
 
 const dateStr = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
-const prompt = `You write a daily news roundup carousel for an Indian Instagram page. One slide per story. Use ONLY facts from the article texts below. Never invent.
+const prompt = `You write a daily AI and startup news roundup carousel for founders, builders and investors (India and global). One slide per story. Use ONLY facts from the article texts below. Never invent.
 
 LANGUAGE (most important): write like you are telling a smart 14-year-old. Short common words. One idea per sentence. No jargon, no abbreviations unless everyone knows them. Give big numbers a human scale. Indian English. NEVER use em dashes or en dashes; use periods, commas or colons. Ranges use hyphens.
 
@@ -52,10 +52,10 @@ Return for each story, in the same order:
 - headline: max 10 words, plain, the single most interesting fact. Wrap the key number or surprise in ==double equals==. Exactly one highlight.
 - line: max 20 words, one sentence, the one extra thing worth knowing.
 - short: max 5 words, a label for the cover list (e.g. "Apple's folding iPhone").
-- category: one word for the tag (India, World, Tech, AI, Money, Science, Startups).
+- category: one word for the tag (AI, Startups, Funding, India, Research, Big Tech).
 Also:
 - cover: max 8 words, e.g. "${items.length} things that happened today" or a sharper version. Wrap the number in ==double equals==.
-- caption, blocks separated by blank lines: 1) HOOK one line max 12 words; 2) the ${items.length} stories as short numbered lines, each adding one fact NOT on the slides; 3) one question to the reader ending with 👇; 4) exactly "Follow @wortins.news for news that actually sticks."; 5) 7-9 hashtags on one line including #wortins.
+- caption, blocks separated by blank lines: 1) HOOK one line max 12 words; 2) the ${items.length} stories as short numbered lines, each adding one fact NOT on the slides; 3) one question to the reader ending with 👇; 4) exactly "Follow @wortins.news for AI and startup news that actually sticks."; 5) 7-9 hashtags on one line including #ai #startups #wortins.
 
 Reply with ONLY JSON:
 {"cover":"...","items":[{"headline":"...","line":"...","short":"...","category":"..."}],"caption":"..."}`;
