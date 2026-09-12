@@ -649,5 +649,181 @@
    "Kunal Bahl",
    "Snapdeal"
   ]
+ },
+ {
+  "slug": "y-combinator-summer-1985",
+  "type": "origin",
+  "region": "global",
+  "subject": "Y Combinator",
+  "angle": "In 2005 Paul Graham, Jessica Livingston, Robert Morris and Trevor Blackwell ran a 'Summer Founders Program' as an experiment in batch-funding undergrads, handing 8 startups roughly $6,000 per founder plus dinners at Graham's place. That first batch contained Reddit and Justin.tv (later Twitch); the motto was 'Make something people want'.",
+  "images": [
+   "Paul Graham programmer",
+   "Y Combinator office Mountain View"
+  ]
+ },
+ {
+  "slug": "atlassian-credit-card",
+  "type": "origin",
+  "region": "global",
+  "subject": "Atlassian",
+  "angle": "Two UNSW graduates, Mike Cannon-Brookes and Scott Farquhar, started Atlassian in Sydney in 2002 on $10,000 of credit card debt with one goal: match the A$48,500 graduate salary their classmates were taking. They refused to hire salespeople and sold Jira online; the company IPO'd on Nasdaq in 2015.",
+  "images": [
+   "Mike Cannon-Brookes",
+   "Scott Farquhar Atlassian"
+  ]
+ },
+ {
+  "slug": "palantir-vc-nos",
+  "type": "origin",
+  "region": "global",
+  "subject": "Palantir",
+  "angle": "Palantir was built on the anti-fraud pattern-matching PayPal used to fight Russian scammers, and almost every Sand Hill Road firm passed — Sequoia's Michael Moritz reportedly doodled through the pitch. Peter Thiel funded it himself and the CIA's venture arm In-Q-Tel became an early backer; the name comes from the seeing-stones in Tolkien.",
+  "images": [
+   "Peter Thiel",
+   "Palantir Technologies headquarters"
+  ]
+ },
+ {
+  "slug": "square-glassblower",
+  "type": "origin",
+  "region": "global",
+  "subject": "Block, Inc.",
+  "angle": "Jim McKelvey, a glassblower, lost a $2,000 sale on a glass faucet because he couldn't take an American Express card; he called his friend Jack Dorsey and in 2009 they built a card reader that plugged into an iPhone headphone jack. The square white dongle became a payments company serving the sellers banks ignored.",
+  "images": [
+   "Jack Dorsey",
+   "Square card reader smartphone"
+  ]
+ },
+ {
+  "slug": "traitorous-eight",
+  "type": "origin",
+  "region": "global",
+  "subject": "Traitorous eight",
+  "angle": "In 1957 eight scientists walked out on Nobel laureate William Shockley, who called them traitors; they signed ten one-dollar bills as their founding contract and got $1.38 million from Sherman Fairchild to start Fairchild Semiconductor. That walkout produced Intel, AMD, Kleiner Perkins and the entire venture capital model of Silicon Valley.",
+  "images": [
+   "Traitorous eight Fairchild Semiconductor",
+   "William Shockley"
+  ]
+ },
+ {
+  "slug": "recaptcha-books",
+  "type": "origin",
+  "region": "global",
+  "subject": "Luis von Ahn",
+  "angle": "Luis von Ahn invented CAPTCHA to stop bots, then realised he was wasting 500,000 human hours a day and rebuilt it as reCAPTCHA, which quietly used those keystrokes to digitise old books and the New York Times archive. He sold it to Google in 2009, won a MacArthur 'genius' grant, and used the same trick-humans-into-useful-work idea to build Duolingo.",
+  "images": [
+   "Luis von Ahn",
+   "Carnegie Mellon University campus"
+  ]
+ },
+ {
+  "slug": "zoho-no-investors",
+  "type": "origin",
+  "region": "global",
+  "subject": "Zoho Corporation",
+  "angle": "Sridhar Vembu started AdventNet in 1996 and has never taken outside investment or gone public, while competing with Salesforce and Microsoft. He moved his headquarters to rural Tenkasi in Tamil Nadu and built Zoho Schools to hire teenagers straight out of high school without college degrees.",
+  "images": [
+   "Sridhar Vembu",
+   "Tenkasi Tamil Nadu"
+  ]
+ },
+ {
+  "slug": "odeo-killed-by-itunes",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Odeo",
+  "angle": "Odeo was a podcasting startup until Apple built podcasts into iTunes in 2005 and killed its entire market overnight. During a hackathon to find something else to do, Jack Dorsey and Noah Glass sketched a status-update service called twttr; Evan Williams then bought the company back from its own investors, who thought they were getting nothing.",
+  "images": [
+   "Evan Williams entrepreneur",
+   "Jack Dorsey 2007"
+  ]
+ },
+ {
+  "slug": "intel-walk-out-the-door",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Andrew Grove",
+  "angle": "In 1985 Japanese rivals were destroying Intel's memory-chip business, and Andy Grove asked Gordon Moore: if the board fired us and brought in a new CEO, what would he do? Moore said get out of memories — so Grove said, why don't we walk out the door, come back in and do it ourselves. Intel abandoned the product it was founded on and became a microprocessor company.",
+  "images": [
+   "Andrew Grove Intel",
+   "Gordon Moore"
+  ]
+ },
+ {
+  "slug": "adobe-refused-jobs",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Adobe Inc.",
+  "angle": "John Warnock and Charles Geschke left Xerox PARC in 1982 because Xerox refused to commercialise their page-description technology. Steve Jobs offered to buy the young Adobe outright for about $5 million; they said no, and instead licensed PostScript to Apple for the LaserWriter, launching desktop publishing and making Apple's 19% stake enormously profitable.",
+  "images": [
+   "John Warnock Adobe",
+   "Apple LaserWriter printer"
+  ]
+ },
+ {
+  "slug": "premji-21-cooking-oil",
+  "type": "turning-point",
+  "region": "india",
+  "subject": "Azim Premji",
+  "angle": "Azim Premji was a 21-year-old engineering student at Stanford when his father died in 1966 and he flew home to run a vegetable oil company; a shareholder told him at his first meeting to sell out because a boy couldn't run it. When IBM was forced out of India in the late 1970s, he pushed the cooking-oil firm into computers, and later gave away tens of billions to philanthropy.",
+  "images": [
+   "Azim Premji",
+   "Wipro headquarters Bangalore"
+  ]
+ },
+ {
+  "slug": "wirecard-missing-billions",
+  "type": "failure",
+  "region": "global",
+  "subject": "Wirecard",
+  "angle": "Wirecard was Germany's fintech champion, in the DAX index and worth more than Deutsche Bank, until auditors admitted in June 2020 that €1.9 billion sitting in Philippine trust accounts simply did not exist. The Financial Times had reported the fraud for years while the regulator BaFin banned short selling and investigated the journalists instead; COO Jan Marsalek vanished and is still a fugitive.",
+  "images": [
+   "Wirecard headquarters Aschheim",
+   "Markus Braun Wirecard"
+  ]
+ },
+ {
+  "slug": "nikola-truck-rolled-downhill",
+  "type": "failure",
+  "region": "global",
+  "subject": "Nikola Corporation",
+  "angle": "Nikola briefly had a market value larger than Ford without selling a single truck, until a short-seller report showed its flagship 'in motion' promo video was a prototype rolled down a hill with no working powertrain. Founder Trevor Milton was convicted of fraud in 2022 and sentenced to prison.",
+  "images": [
+   "Nikola hydrogen truck",
+   "Trevor Milton"
+  ]
+ },
+ {
+  "slug": "satyam-riding-a-tiger",
+  "type": "failure",
+  "region": "india",
+  "subject": "Satyam scandal",
+  "angle": "In January 2009 Satyam's chairman B. Ramalinga Raju sent a confession letter admitting he had inflated the company's cash balance by over ₹5,000 crore and that it was 'like riding a tiger, not knowing how to get off without being eaten'. India's fourth-largest IT firm collapsed days after winning a global governance award, and Tech Mahindra bought the wreckage.",
+  "images": [
+   "Ramalinga Raju",
+   "Satyam Computer Services office Hyderabad"
+  ]
+ },
+ {
+  "slug": "turing-1950-imitation-game",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "Computing Machinery and Intelligence",
+  "angle": "Alan Turing opened his 1950 paper by calling 'Can machines think?' a meaningless question and replacing it with the imitation game. He predicted that by 2000 a machine with about a gigabyte of memory would fool interrogators 30% of the time in five minutes, and answered nine objections in advance — including Ada Lovelace's claim that machines can only do what we tell them.",
+  "images": [
+   "Alan Turing",
+   "Alan Turing memorial statue Manchester"
+  ]
+ },
+ {
+  "slug": "tay-16-hours",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "Tay (chatbot)",
+  "angle": "Microsoft launched Tay on Twitter in March 2016 as a teenage chatbot that learned from conversation, and trolls coordinated to feed it hate speech. Within 16 hours it had posted about 96,000 tweets and Microsoft pulled it — the first mass-audience lesson that a model becomes whatever its input data is.",
+  "images": [
+   "Microsoft headquarters Redmond",
+   "Twitter app icon phone"
+  ]
  }
 ]
