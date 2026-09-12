@@ -1,32 +1,32 @@
 {
-  "_comment": "REFERENCE ONLY: live schedule is Supabase pg_cron (gh-insta-*). Crons fire 10 min BEFORE the nominal IST time, then wait 0-20 min. 6 posts/day: 2 briefs, 2 stories, 2 news. All handoff.",
-  "20 2 * * *": {
-    "ist": "08:00",
+  "_comment": "REFERENCE ONLY: live schedule is Supabase pg_cron (gh-insta-*). Crons fire 10 min BEFORE the nominal IST time, then wait 0-20 min. 6 posts/day, evening-weighted. All handoff.",
+  "20 3 * * *": {
+    "ist": "09:00",
     "category": "roundup-morning",
     "mode": "handoff"
   },
-  "50 4 * * *": {
-    "ist": "10:30",
+  "50 6 * * *": {
+    "ist": "12:30",
     "category": "ai",
     "mode": "handoff"
   },
-  "20 7 * * *": {
-    "ist": "13:00",
+  "20 10 * * *": {
+    "ist": "16:00",
     "category": "story",
-    "mode": "handoff"
-  },
-  "50 9 * * *": {
-    "ist": "15:30",
-    "category": "vc",
     "mode": "handoff"
   },
   "20 12 * * *": {
     "ist": "18:00",
+    "category": "vc",
+    "mode": "handoff"
+  },
+  "50 13 * * *": {
+    "ist": "19:30",
     "category": "story",
     "mode": "handoff"
   },
-  "50 14 * * *": {
-    "ist": "20:30",
+  "20 15 * * *": {
+    "ist": "21:00",
     "category": "roundup-evening",
     "mode": "handoff"
   }
