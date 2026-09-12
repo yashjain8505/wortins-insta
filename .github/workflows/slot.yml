@@ -27,7 +27,7 @@ concurrency:
 jobs:
   slot:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
 
@@ -126,14 +126,20 @@ jobs:
             -d chat_id="$CHAT" \
             --data-urlencode text="⚠️ Wortins post FAILED: ${{ steps.slot.outputs.category }} slot (tried twice). No post for this slot. Logs: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" > /dev/null
 
-      - name: Persist state (seen/published/facts-used)
+      - name: Persist state (seen/published/used/bank), union-merging if another run landed first
         if: always()
         run: |
           git config user.name "insta-bot"
           git config user.email "actions@users.noreply.github.com"
           git add pipeline/state pipeline/stories-bank.json
-          if ! git diff --cached --quiet; then
-            git pull --rebase --autostash origin main
-            git commit -m "state: ${{ steps.slot.outputs.category }} slot ($(date -u +%Y-%m-%dT%H:%MZ))"
-            git push
-          fi
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "state: ${{ steps.slot.outputs.category }} slot ($(date -u +%Y-%m-%dT%H:%MZ))"
+          for i in 1 2 3 4; do
+            git fetch -q origin main
+            if GIT_EDITOR=true git rebase origin/main || (node pipeline/merge-state.mjs && GIT_EDITOR=true git rebase --continue); then
+              git push && exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            sleep 5
+          done
+          echo "could not persist state after 4 attempts" && exit 1

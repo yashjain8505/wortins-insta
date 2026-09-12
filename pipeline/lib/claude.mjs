@@ -2,21 +2,21 @@
 import { execFile } from 'node:child_process';
 
 // Fallback chain: a failed Opus call (rate limit, usage window, timeout) retries on Sonnet; Sonnet retries once on Sonnet.
-export async function askClaude(prompt, { model = 'sonnet', timeoutMs = 240000 } = {}) {
-  try { return await askOnce(prompt, { model, timeoutMs }); }
+export async function askClaude(prompt, { model = 'sonnet', timeoutMs = 240000, tools = [] } = {}) {
+  try { return await askOnce(prompt, { model, timeoutMs, tools }); }
   catch (e) {
     const fallback = model === 'opus' ? 'sonnet' : model;
     console.log(`claude ${model} failed (${String(e.message).slice(0, 80)}), retrying on ${fallback}`);
     await new Promise(r => setTimeout(r, 20000));
-    return askOnce(prompt, { model: fallback, timeoutMs });
+    return askOnce(prompt, { model: fallback, timeoutMs, tools });
   }
 }
 
-function askOnce(prompt, { model, timeoutMs }) {
+function askOnce(prompt, { model, timeoutMs, tools = [] }) {
   return new Promise((resolve, reject) => {
     const child = execFile(
       'claude',
-      ['-p', '--model', model],
+      ['-p', '--model', model, ...(tools.length ? ['--allowedTools', ...tools] : [])],
       { timeout: timeoutMs, maxBuffer: 16 * 1024 * 1024 },
       (err, stdout, stderr) => {
         if (err) reject(new Error(`claude CLI failed: ${stderr || err.message}`));

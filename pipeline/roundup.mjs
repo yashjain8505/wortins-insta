@@ -5,11 +5,12 @@ import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { askClaude, extractJson } from './lib/claude.mjs';
 import { fetchArticle, downloadImage } from './lib/article.mjs';
+import { VOICE } from './lib/voice.mjs';
 
 const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 const args = process.argv.slice(2);
 const edition = args[args.indexOf('--edition') + 1] || (new Date().getUTCHours() < 9 ? 'morning' : 'evening');
-const WANT = 5;
+const WANT = 7; // up to 7 stories if the day has them; at least 4
 
 const scored = JSON.parse(fs.readFileSync('work/scored.json', 'utf8'));
 const seenPath = 'state/seen.json';
@@ -43,7 +44,7 @@ if (items.length < 4) { console.error(`only ${items.length} usable items, need 4
 const dateStr = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
 const prompt = `You write a daily AI and startup news roundup carousel for founders, builders and investors (India and global). One slide per story. Use ONLY facts from the article texts below. Never invent.
 
-LANGUAGE (most important): write like you are telling a smart 14-year-old. Short common words. One idea per sentence. No jargon, no abbreviations unless everyone knows them. Give big numbers a human scale. Indian English. NEVER use em dashes or en dashes; use periods, commas or colons. Ranges use hyphens.
+${VOICE}
 
 STORIES:
 ${items.map((it, i) => `--- STORY ${i + 1} (source: ${it.source}, category: ${it.category}) ---\nTITLE: ${it.title}\n${it.text}`).join('\n\n')}

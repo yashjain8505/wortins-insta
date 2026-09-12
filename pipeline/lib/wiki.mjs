@@ -22,8 +22,14 @@ export async function wikiText(title, { maxChars = 14000 } = {}) {
 }
 
 // Search Wikimedia Commons for usable photos. Returns [{url, credit}] best-first.
+// A query that looks like a person's name ("Adam Neumann", "N. R. Narayana Murthy") must match every name token
+// in the file's title or description, otherwise Commons happily returns some other Neumann.
+const looksLikePerson = (q) => { const w = q.trim().split(/\s+/); return w.length >= 2 && w.length <= 4 && w.every(x => /^[A-Z][\w.'-]*$/.test(x)) && !/\b(Inc|Corp|Company|Labs|Office|Building|Headquarters|Logo|Campus|Store|Factory|Bank|Fund)\b/i.test(q); };
+
 export async function commonsPhotos(query, { limit = 6 } = {}) {
-  const url = `https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=${encodeURIComponent(query)}&gsrlimit=${limit * 2}&gsrnamespace=6&prop=imageinfo&iiprop=url|size|mime|extmetadata&iiurlwidth=1400`;
+  const person = looksLikePerson(query);
+  const tokens = query.toLowerCase().replace(/[^a-z\s]/g, ' ').split(/\s+/).filter(t => t.length > 1);
+  const url = `https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=${encodeURIComponent(query)}&gsrlimit=${limit * 2}&gsrnamespace=6&prop=imageinfo&iiprop=url|size|mime|extmetadata&iiextmetadatafilter=Artist|LicenseShortName|ImageDescription|ObjectName|Categories&iiurlwidth=1400`;
   const res = await fetch(url, { headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(20000) });
   if (!res.ok) return [];
   const data = await res.json();
@@ -37,6 +43,10 @@ export async function commonsPhotos(query, { limit = 6 } = {}) {
     if (ii.width < 900 || ii.width / ii.height > 2.4 || ii.height / ii.width > 1.6) continue;
     if (/logo|icon|map|diagram|chart|screenshot|flag|coat of arms|seal|emblem|signature/i.test(p.title)) continue;
     const meta = ii.extmetadata ?? {};
+    if (person) {
+      const hay = ((p.title ?? '') + ' ' + (meta.ImageDescription?.value ?? '') + ' ' + (meta.ObjectName?.value ?? '') + ' ' + (meta.Categories?.value ?? '')).toLowerCase();
+      if (!tokens.every(t => hay.includes(t))) continue; // wrong person: skip
+    }
     const artist = (meta.Artist?.value ?? '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim().slice(0, 40);
     const license = (meta.LicenseShortName?.value ?? '').trim();
     out.push({ url: ii.thumburl ?? ii.url, credit: `Photo: ${artist ? artist + ' / ' : ''}Wikimedia Commons${license ? ' (' + license + ')' : ''}` });

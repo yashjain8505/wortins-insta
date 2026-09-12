@@ -19,28 +19,28 @@ const slides = fs.readdirSync(dir).filter(f => /^slide-\d+\.jpg$/.test(f)).sort(
 const runId = path.basename(dir);
 const sbHeaders = { Authorization: `Bearer ${KEY}`, apikey: KEY };
 
-const MUSIC = {
-  india: 'Minimal cinematic beat. In IG music search: "cinematic ambient"',
-  'origin story': 'Inspiring cinematic build. In IG music search: "inspirational cinematic"',
-  'turning point': 'Tense cinematic. In IG music search: "cinematic tension"',
-  'what went wrong': 'Dark, slow. In IG music search: "dramatic piano"',
-  'ai history': 'Dreamy ambient. In IG music search: "dreamy ambient"',
-  roundup: 'News-desk energy. In IG music search: "cinematic ambient" or "upbeat lofi"',
-  global: 'Minimal cinematic beat. In IG music search: "cinematic ambient"',
-  ai: 'Lo-fi chill beat. In IG music search: "lofi"',
-  tech: 'Lo-fi chill beat. In IG music search: "lofi"',
-  'india-tech': 'Lo-fi chill beat. In IG music search: "lofi"',
-  funding: 'Lo-fi chill beat. In IG music search: "lofi"',
-  startups: 'Lo-fi chill beat. In IG music search: "lofi"',
-  research: 'Dreamy ambient. In IG music search: "dreamy ambient"',
-  'big tech': 'Lo-fi chill beat. In IG music search: "lofi"',
-  vc: 'Lo-fi chill beat. In IG music search: "lofi"',
-  fact: 'Playful and quirky. In IG music search: "quirky" or use a trending funny audio',
-  science: 'Dreamy ambient. In IG music search: "dreamy ambient" or "slowed reverb"',
-  story: 'Dreamy ambient. In IG music search: "dreamy ambient"',
+// Real tracks to search in Instagram's music picker, by mood. Three are suggested per alert, rotating.
+// Business accounts only see the royalty-free library; a Creator account sees the full catalogue.
+const TRACKS = {
+  lofi:      ['Snowfall (Oneheart & reidenshi)', 'Aesthetic (Tollan Kim)', 'Sunset Lover (Petit Biscuit)', 'Blue (yung kai)', 'Lofi Chill (search: lofi)', 'Coffee Shop Lofi (search: chill lofi)'],
+  cinematic: ['Cornfield Chase (Hans Zimmer)', 'Time (Hans Zimmer)', 'Experience (Ludovico Einaudi)', 'Nuvole Bianche (Ludovico Einaudi)', 'Interstellar Main Theme (Hans Zimmer)', 'Cinematic Ambient (search: cinematic)'],
+  inspiring: ['Experience (Ludovico Einaudi)', 'Una Mattina (Ludovico Einaudi)', 'River Flows in You (Yiruma)', 'Cornfield Chase (Hans Zimmer)', 'Divenire (Ludovico Einaudi)', 'Inspiring Piano (search: inspirational)'],
+  tension:   ['Lux Aeterna (Clint Mansell)', 'Time (Hans Zimmer)', 'Mombasa (Hans Zimmer)', 'Divenire (Ludovico Einaudi)', 'Dramatic Piano (search: dramatic piano)', 'Cinematic Tension (search: tension)'],
+  dreamy:    ['Space Song (Beach House)', 'Snowfall (Oneheart & reidenshi)', 'Blue (yung kai)', 'Sunset Lover (Petit Biscuit)', 'Dreamy Ambient (search: dreamy)', 'Motion (search: ambient)'],
+};
+const MOOD = {
+  ai: 'lofi', tech: 'lofi', 'india-tech': 'lofi', vc: 'lofi', funding: 'lofi', startups: 'lofi', 'big tech': 'lofi', research: 'dreamy',
+  india: 'cinematic', global: 'cinematic', roundup: 'cinematic',
+  'origin story': 'inspiring', 'turning point': 'tension', 'what went wrong': 'tension', 'ai history': 'dreamy', fact: 'lofi',
+};
+const pickTracks = (mood) => { const list = TRACKS[mood] ?? TRACKS.lofi; const start = Math.floor(Math.random() * list.length); return [0, 1, 2].map(i => list[(start + i) % list.length]); };
+const musicFor = (cat) => {
+  const mood = MOOD[cat] ?? 'lofi';
+  const [a, b, c] = pickTracks(mood);
+  return `${mood} vibe. Search one of these in the music picker:\n   1. ${a}\n   2. ${b}\n   3. ${c}\n   (Not there? A Business account only sees the royalty-free library. Switch to Creator in Settings > Account type to unlock the full catalogue; posting keeps working.)`;
 };
 const cat = story.type === 'fact' ? 'fact' : story.type === 'roundup' ? 'roundup' : (story.category ?? '').toLowerCase();
-const music = MUSIC[cat] ?? MUSIC[(story.type === 'news' ? 'india' : 'fact')] ?? 'Pick a lo-fi beat';
+const music = musicFor(cat);
 
 async function put(objectPath, body, contentType) {
   const res = await fetch(`${SUPABASE_URL}/storage/v1/object/${BUCKET}/${objectPath}`, {

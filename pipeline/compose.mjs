@@ -5,6 +5,8 @@ import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { askClaude, extractJson } from './lib/claude.mjs';
 import { fetchArticle, downloadPhotoSet } from './lib/article.mjs';
+import { VOICE, editorPass } from './lib/voice.mjs';
+import { researchNews, dossierText } from './lib/research.mjs';
 
 const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 const args = process.argv.slice(2);
@@ -32,15 +34,21 @@ for (const pick of pool) {
     if (!photos.length) throw new Error('no usable image');
     console.log(`  photos: ${photos.length}`);
 
-    const prompt = `You write Instagram carousels about AI and startups for founders, builders, investors and people who work in tech (India and global). Turn this article into a carousel story. Use ONLY facts stated in the article text below — never invent numbers, names or claims. If the article lacks a concrete hook, still write the strongest honest version.
+    console.log('  researching other coverage...');
+    let extraFacts = '';
+    try { const d = await researchNews({ title: pick.title, source: pick.source, articleText: article.text, model: config.composeModel }); extraFacts = '\n\nEXTRA FACTS FROM OTHER COVERAGE (sourced, use freely):\n' + dossierText(d); console.log(`  +${d.facts.length} facts from ${(d.sources ?? []).slice(0, 4).join(', ')}`); }
+    catch (e) { console.log('  research skipped: ' + e.message.slice(0, 60)); }
+
+    const prompt = `You write Instagram carousels about AI and startups for founders, builders, investors and people who work in tech (India and global). Turn this article into a carousel story. Use ONLY facts stated in the article text and the extra sourced facts below. Never invent numbers, names or claims. If the article lacks a concrete hook, still write the strongest honest version.
 
 ARTICLE (from ${pick.source}): ${pick.title}
-${article.text.slice(0, 4000)}
+${article.text.slice(0, 4000)}${extraFacts}
 
 Rules:
-- LANGUAGE (most important rule): write like you are telling a smart 14-year-old. Short, common words. One idea per sentence. Sentences under 12 words wherever possible. No jargon, no abbreviations unless everyone knows them (UPI, AI, GDP are fine). If a technical term is unavoidable, explain it in a few words right there. Give big numbers a human scale ("$500 million, about ₹4,200 crore"). Indian English, no slang. NEVER use em dashes or en dashes. Use periods, commas or colons instead. Ranges use hyphens ("2-3").
+${VOICE}
+- Background from years ago belongs on a slide only if it explains today's news, and then the year leads the sentence.
 - headline: max 12 words, punchy, plain English. Wrap THE key phrase (a number or the surprise) in ==double equals== for highlight. Exactly one highlight.
-- 3 or 4 detail slides (4 when the article has enough real substance, 3 otherwise). Each slide = ONE idea. Order them as a story: what happened, the key detail or number, why it matters to a normal person, what happens next or the catch. Slide labels: short ("What happened", "The number", "Why it matters", "The catch", "What's next"). heading: max 14 words, may use one ==highlight==. body: max 2 short sentences, conversational, no jargon.
+- 4 to 8 detail slides: one per strong beat, as many as the article truly supports, never padding (4-5 is typical). Each slide = ONE idea. Order them as a story: what happened, the key detail or number, why it matters to a normal person, what happens next or the catch. Slide labels: short ("What happened", "The number", "Why it matters", "The catch", "What's next"). heading: max 14 words, may use one ==highlight==. body: max 2 short sentences, conversational, no jargon.
 - kicker: "<Topic> · ${new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}"
 - category: one word for the corner tag (e.g. India, World, Tech, Money).
 - caption: the second layer of the post, for people who want more. Build it EXACTLY in this order, blocks separated by blank lines:
@@ -60,11 +68,14 @@ Reply with ONLY JSON:
     const bad =
       story.type !== 'news' ? 'type' :
       !story.headline || story.headline.length > 110 ? 'headline' :
-      !Array.isArray(story.slides) || story.slides.length < 3 || story.slides.length > 4 ? 'slides' :
+      !Array.isArray(story.slides) || story.slides.length < 4 || story.slides.length > 8 ? 'slides' :
       story.slides.some(s => !s.label || !s.heading || !s.body || s.heading.length > 130 || s.body.length > 260) ? 'slide fields' :
       !story.source ? 'source' : null;
     if (bad) throw new Error(`story validation failed: ${bad}`);
 
+    console.log('editor pass...');
+    const edited = await editorPass(story, { model: config.storyModel ?? config.composeModel, kind: 'news' }).catch(e => { console.log('editor pass skipped: ' + e.message); return story; });
+    Object.assign(story, edited);
     story.photo = photos[0];
     story.photos = photos;
     story.photoCredit = `Photo: ${pick.source}`;
