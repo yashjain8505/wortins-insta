@@ -15,5 +15,7 @@
     "vc": 1,
     "fact": 1,
     "science-or-story": 1
-  }
+  },
+  "storyModel": "opus",
+  "bankMinUnused": 12
 }

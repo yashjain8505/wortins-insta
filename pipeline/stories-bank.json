@@ -583,5 +583,71 @@
    "Demis Hassabis",
    "Protein structure"
   ]
+ },
+ {
+  "slug": "jack-ma-kfc",
+  "type": "origin",
+  "region": "global",
+  "subject": "Jack Ma",
+  "angle": "Jack Ma failed his college entrance exam twice, was rejected from dozens of jobs including KFC (24 applied, 23 hired, he was the one turned down), and started Alibaba in 1999 in his Hangzhou apartment with 17 co-founders and about $60,000. Alibaba's 2014 IPO was the largest in history at the time.",
+  "images": [
+   "Jack Ma",
+   "Alibaba Group headquarters Hangzhou"
+  ]
+ },
+ {
+  "slug": "spanx-5000-dollars",
+  "type": "origin",
+  "region": "global",
+  "subject": "Spanx",
+  "angle": "Sara Blakely was selling fax machines door to door, cut the feet off her pantyhose, and started Spanx in 2000 with $5,000 of savings, writing her own patent to avoid legal fees. Every hosiery mill turned her down until one owner's daughters talked him into it; she became the youngest self-made female billionaire in 2012.",
+  "images": [
+   "Sara Blakely",
+   "Spanx"
+  ]
+ },
+ {
+  "slug": "dyson-5127-prototypes",
+  "type": "origin",
+  "region": "global",
+  "subject": "James Dyson",
+  "angle": "James Dyson spent five years and built 5,127 prototypes of a bagless vacuum cleaner in his coach house, was rejected by every major manufacturer, and licensed it in Japan before launching his own company in the UK. Dyson went from near-bankruptcy to becoming one of Britain's richest people.",
+  "images": [
+   "James Dyson",
+   "Dyson vacuum cleaner"
+  ]
+ },
+ {
+  "slug": "paytm-cassettes",
+  "type": "origin",
+  "region": "india",
+  "subject": "Vijay Shekhar Sharma",
+  "angle": "Vijay Shekhar Sharma grew up in a Hindi-medium school in Aligarh, learned English from cassette tapes and second-hand books, and once took a loan at 24 percent interest to keep One97 alive. He launched Paytm in 2010; demonetisation in 2016 turned it into India's biggest payments brand and the largest Indian IPO of its time in 2021.",
+  "images": [
+   "Vijay Shekhar Sharma",
+   "Paytm office Noida"
+  ]
+ },
+ {
+  "slug": "86-dos-75000",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "86-DOS",
+  "angle": "When IBM needed an operating system for its 1981 PC, Microsoft didn't have one. It bought 86-DOS, written by Tim Paterson at Seattle Computer Products, for about $75,000, renamed it MS-DOS and licensed it to IBM non-exclusively. That one deal built Microsoft's monopoly.",
+  "images": [
+   "Tim Paterson",
+   "IBM Personal Computer 5150"
+  ]
+ },
+ {
+  "slug": "snapdeal-2-0",
+  "type": "turning-point",
+  "region": "india",
+  "subject": "Snapdeal",
+  "angle": "Snapdeal was valued at $6.5 billion in 2016, then ran out of money, laid off most staff and was pushed by SoftBank to merge with Flipkart for under $1 billion. Founders Kunal Bahl and Rohit Bansal refused the deal in 2017, cut costs to the bone and rebuilt the company as Snapdeal 2.0.",
+  "images": [
+   "Kunal Bahl",
+   "Snapdeal"
+  ]
  }
 ]

@@ -2,7 +2,7 @@
 const UA = 'wortins-insta/0.1 (https://wortins.com; editorial carousel pipeline)';
 
 // Plain-text article, trimmed to the intro plus the sections that tell the story.
-export async function wikiText(title, { maxChars = 9000 } = {}) {
+export async function wikiText(title, { maxChars = 14000 } = {}) {
   const url = `https://en.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext=1&redirects=1&format=json&titles=${encodeURIComponent(title)}`;
   const res = await fetch(url, { headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(20000) });
   if (!res.ok) throw new Error(`wikipedia ${res.status}`);

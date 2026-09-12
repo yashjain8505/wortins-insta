@@ -9,7 +9,7 @@ on:
         description: Content category for this slot
         required: true
         type: choice
-        options: [india, india-tech, global, ai, tech, vc, fact, science-or-story, roundup-morning, roundup-evening, story]
+        options: [india, india-tech, global, ai, tech, vc, fact, science-or-story, roundup-morning, roundup-evening, story, replenish]
       mode:
         description: publish = live post, handoff = Telegram + shortcut, dry = upload only, render-only = build only
         required: true
@@ -70,6 +70,13 @@ jobs:
       - name: Install Claude CLI
         run: npm install -g @anthropic-ai/claude-code
 
+      - name: Random delay (0-14 min, so posts never land at the same minute every day)
+        if: github.event_name != 'workflow_dispatch' || inputs.mode == 'handoff' || inputs.mode == 'publish'
+        run: |
+          d=$(( RANDOM % 840 ))
+          echo "waiting ${d}s"
+          sleep $d
+
       - name: Run slot
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
@@ -89,7 +96,7 @@ jobs:
         run: |
           git config user.name "insta-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add pipeline/state
+          git add pipeline/state pipeline/stories-bank.json
           if ! git diff --cached --quiet; then
             git pull --rebase --autostash origin main
             git commit -m "state: ${{ steps.slot.outputs.category }} slot ($(date -u +%Y-%m-%dT%H:%MZ))"

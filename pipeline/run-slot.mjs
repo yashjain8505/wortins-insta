@@ -18,6 +18,11 @@ const newestQueueDir = () => fs.readdirSync('queue')
 
 const before = newestQueueDir();
 
+if (category === 'replenish') {
+  run('node', ['replenish.mjs']);
+  console.log('bank replenished (no carousel this run)');
+  process.exit(0);
+}
 if (category === 'fact') {
   run('node', ['run-fact.mjs']);
 } else if (category === 'story') {
