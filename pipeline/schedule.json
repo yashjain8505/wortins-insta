@@ -1,5 +1,5 @@
 {
-  "_comment": "REFERENCE ONLY: live schedule is Supabase pg_cron (gh-insta-*). Crons fire 10 min BEFORE the nominal IST time, then wait 0-20 min. 2 briefs, 4 evergreen stories, 4 news (VC sources still feed the briefs and scoring, but no dedicated VC slot: too dry). All handoff.",
+  "_comment": "REFERENCE ONLY: live schedule is Supabase pg_cron (gh-insta-*). Crons fire 10 min BEFORE the nominal IST time, then wait 0-20 min. 2 briefs, 2 evergreen stories, 6 news. All handoff.",
   "50 1 * * *": {
     "ist": "07:30",
     "category": "roundup-morning",
@@ -12,7 +12,7 @@
   },
   "50 4 * * *": {
     "ist": "10:30",
-    "category": "story",
+    "category": "vc",
     "mode": "handoff"
   },
   "20 6 * * *": {
@@ -32,7 +32,7 @@
   },
   "50 10 * * *": {
     "ist": "16:30",
-    "category": "story",
+    "category": "vc",
     "mode": "handoff"
   },
   "20 12 * * *": {
