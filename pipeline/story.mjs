@@ -12,7 +12,8 @@ const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 const bank = JSON.parse(fs.readFileSync('stories-bank.json', 'utf8'));
 const usedPath = 'state/stories-used.json';
 const used = fs.existsSync(usedPath) ? JSON.parse(fs.readFileSync(usedPath, 'utf8')) : [];
-const argSlug = process.argv[process.argv.indexOf('--slug') + 1];
+const slugIdx = process.argv.indexOf('--slug');
+const argSlug = slugIdx >= 0 ? process.argv[slugIdx + 1] : null; // indexOf(-1)+1 was argv[0] = the node binary, which matched no slug
 if (bank.filter(s => !used.includes(s.slug)).length < (config.bankMinUnused ?? 12)) {
   console.log('story bank running low, replenishing first...');
   try { execFileSync('node', ['replenish.mjs'], { stdio: 'inherit' }); } catch (e) { console.log('replenish failed, continuing with what is left'); }
