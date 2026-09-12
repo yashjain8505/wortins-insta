@@ -7,7 +7,7 @@ import { wikiText, commonsPhotos } from './lib/wiki.mjs';
 const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 const bank = JSON.parse(fs.readFileSync('stories-bank.json', 'utf8'));
 const used = fs.existsSync('state/stories-used.json') ? JSON.parse(fs.readFileSync('state/stories-used.json', 'utf8')) : [];
-const argCount = Number(process.argv[process.argv.indexOf('--count') + 1]) || 12;
+const argCount = Number(process.argv[process.argv.indexOf('--count') + 1]) || 20;
 
 const known = bank.map(s => `${s.slug} (${s.subject}: ${s.angle.slice(0, 60)})`).join('\n');
 const prompt = `You curate an inventory of evergreen stories for an Instagram page about AI and startups (audience: founders, builders, investors, India and global). Propose ${argCount + 4} NEW stories that are NOT already in the inventory below and do not retell the same event from another angle.

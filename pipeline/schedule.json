@@ -1,51 +1,51 @@
 {
-  "_comment": "REFERENCE ONLY: live schedule is Supabase pg_cron (gh-insta-*). Crons fire 10 min BEFORE the nominal IST time; the run then waits a random 0-20 min. All handoff.",
-  "0 2 * * *": {
+  "_comment": "REFERENCE ONLY: live schedule is Supabase pg_cron (gh-insta-*). Crons fire 10 min BEFORE the nominal IST time, then wait 0-20 min. 2 briefs, 4 evergreen stories, 4 news (VC sources still feed the briefs and scoring, but no dedicated VC slot: too dry). All handoff.",
+  "50 1 * * *": {
     "ist": "07:30",
     "category": "roundup-morning",
     "mode": "handoff"
   },
-  "30 3 * * *": {
+  "20 3 * * *": {
     "ist": "09:00",
     "category": "ai",
     "mode": "handoff"
   },
-  "0 5 * * *": {
+  "50 4 * * *": {
     "ist": "10:30",
     "category": "story",
     "mode": "handoff"
   },
-  "30 6 * * *": {
+  "20 6 * * *": {
     "ist": "12:00",
-    "category": "vc",
+    "category": "india-tech",
     "mode": "handoff"
   },
-  "0 8 * * *": {
+  "50 7 * * *": {
     "ist": "13:30",
     "category": "story",
     "mode": "handoff"
   },
-  "30 9 * * *": {
+  "20 9 * * *": {
     "ist": "15:00",
-    "category": "india-tech",
-    "mode": "handoff"
-  },
-  "0 11 * * *": {
-    "ist": "16:30",
     "category": "ai",
     "mode": "handoff"
   },
-  "30 12 * * *": {
-    "ist": "18:00",
-    "category": "vc",
+  "50 10 * * *": {
+    "ist": "16:30",
+    "category": "story",
     "mode": "handoff"
   },
-  "0 14 * * *": {
+  "20 12 * * *": {
+    "ist": "18:00",
+    "category": "ai",
+    "mode": "handoff"
+  },
+  "50 13 * * *": {
     "ist": "19:30",
     "category": "story",
     "mode": "handoff"
   },
-  "30 15 * * *": {
+  "20 15 * * *": {
     "ist": "21:00",
     "category": "roundup-evening",
     "mode": "handoff"
