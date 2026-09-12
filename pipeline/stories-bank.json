@@ -1,0 +1,587 @@
+[
+ {
+  "slug": "nvidia-dennys",
+  "type": "origin",
+  "region": "global",
+  "subject": "Nvidia",
+  "angle": "Three engineers planned Nvidia at a Denny's diner in 1993; near-bankruptcy in the 90s; the bet on graphics chips that later became the engine of AI.",
+  "images": [
+   "Jensen Huang",
+   "Nvidia headquarters"
+  ]
+ },
+ {
+  "slug": "airbnb-cereal",
+  "type": "origin",
+  "region": "global",
+  "subject": "Airbnb",
+  "angle": "Two designers rented air mattresses in their apartment in 2007, sold custom cereal boxes to survive, got rejected by investors, then Y Combinator.",
+  "images": [
+   "Brian Chesky",
+   "Airbnb office"
+  ]
+ },
+ {
+  "slug": "amazon-garage",
+  "type": "origin",
+  "region": "global",
+  "subject": "History of Amazon",
+  "angle": "Bezos left a Wall Street job in 1994 to sell books online from a garage; the early years of losses before profit.",
+  "images": [
+   "Jeff Bezos",
+   "Amazon Spheres Seattle"
+  ]
+ },
+ {
+  "slug": "apple-garage",
+  "type": "origin",
+  "region": "global",
+  "subject": "History of Apple Inc.",
+  "angle": "Jobs and Wozniak building the Apple I in 1976, selling a van and a calculator to fund it; the Apple II and the first IPO.",
+  "images": [
+   "Steve Jobs",
+   "Steve Wozniak",
+   "Apple Park"
+  ]
+ },
+ {
+  "slug": "google-backrub",
+  "type": "origin",
+  "region": "global",
+  "subject": "History of Google",
+  "angle": "Two Stanford PhD students, a search engine first called BackRub, the $100,000 cheque written before the company existed, the garage in Menlo Park.",
+  "images": [
+   "Larry Page",
+   "Sergey Brin",
+   "Googleplex"
+  ]
+ },
+ {
+  "slug": "openai-nonprofit",
+  "type": "origin",
+  "region": "global",
+  "subject": "OpenAI",
+  "angle": "Founded in 2015 as a non-profit with a pledge of $1 billion; the shift to a capped-profit model; Microsoft's investment; ChatGPT.",
+  "images": [
+   "Sam Altman",
+   "OpenAI"
+  ]
+ },
+ {
+  "slug": "spacex-three-failures",
+  "type": "origin",
+  "region": "global",
+  "subject": "SpaceX",
+  "angle": "The first three Falcon 1 launches failed; the fourth in 2008 succeeded with money for one more try; NASA contract days later.",
+  "images": [
+   "Elon Musk",
+   "Falcon 9 launch",
+   "SpaceX Starbase"
+  ]
+ },
+ {
+  "slug": "stripe-collisons",
+  "type": "origin",
+  "region": "global",
+  "subject": "Stripe, Inc.",
+  "angle": "Two Irish teenage brothers who sold their first company, then built seven lines of code that let websites take payments; Y Combinator; valuation history.",
+  "images": [
+   "Patrick Collison",
+   "John Collison"
+  ]
+ },
+ {
+  "slug": "shopify-snowboards",
+  "type": "origin",
+  "region": "global",
+  "subject": "Shopify",
+  "angle": "Tobias Lütke wanted to sell snowboards online in 2004, hated the software available, built his own store software, and that became the product.",
+  "images": [
+   "Tobias Lütke",
+   "Shopify"
+  ]
+ },
+ {
+  "slug": "slack-failed-game",
+  "type": "origin",
+  "region": "global",
+  "subject": "Slack Technologies",
+  "angle": "Slack began as an internal chat tool for a video game that failed (Glitch); the team kept the tool and it became one of the fastest-growing business apps ever.",
+  "images": [
+   "Stewart Butterfield",
+   "Slack Technologies"
+  ]
+ },
+ {
+  "slug": "instagram-burbn",
+  "type": "origin",
+  "region": "global",
+  "subject": "Instagram",
+  "angle": "Started as a check-in app called Burbn; the founders cut everything except photos, filters and likes; 25,000 users on day one; sold to Facebook for $1 billion with 13 employees.",
+  "images": [
+   "Kevin Systrom",
+   "Instagram"
+  ]
+ },
+ {
+  "slug": "whatsapp-rejected",
+  "type": "origin",
+  "region": "global",
+  "subject": "WhatsApp",
+  "angle": "Jan Koum and Brian Acton were rejected for jobs at Facebook and Twitter; built WhatsApp; Facebook bought it in 2014 for about $19 billion.",
+  "images": [
+   "Jan Koum",
+   "Brian Acton",
+   "WhatsApp"
+  ]
+ },
+ {
+  "slug": "zoom-visa",
+  "type": "origin",
+  "region": "global",
+  "subject": "Zoom Communications",
+  "angle": "Eric Yuan's US visa was refused eight times; he left Cisco WebEx to start Zoom in 2011; the pandemic made it a household name.",
+  "images": [
+   "Eric Yuan",
+   "Zoom Video Communications"
+  ]
+ },
+ {
+  "slug": "canva-rejections",
+  "type": "origin",
+  "region": "global",
+  "subject": "Canva",
+  "angle": "Melanie Perkins pitched to more than a hundred investors and was rejected; started with a school yearbook tool in Perth; Canva's rise to a multi-billion valuation.",
+  "images": [
+   "Melanie Perkins",
+   "Canva"
+  ]
+ },
+ {
+  "slug": "deepmind-origin",
+  "type": "origin",
+  "region": "global",
+  "subject": "Google DeepMind",
+  "angle": "Founded in London in 2010 to solve intelligence; Google bought it in 2014; AlphaGo; AlphaFold and the Nobel Prize.",
+  "images": [
+   "Demis Hassabis",
+   "DeepMind"
+  ]
+ },
+ {
+  "slug": "tesla-not-founded-by-musk",
+  "type": "origin",
+  "region": "global",
+  "subject": "Tesla, Inc.",
+  "angle": "Tesla was founded in 2003 by Eberhard and Tarpenning; Musk came in as an investor and chairman; the Roadster; the near-bankruptcy of 2008.",
+  "images": [
+   "Elon Musk",
+   "Tesla Roadster",
+   "Tesla Gigafactory"
+  ]
+ },
+ {
+  "slug": "uber-snowy-night",
+  "type": "origin",
+  "region": "global",
+  "subject": "Uber",
+  "angle": "The idea came from failing to get a cab on a snowy night in Paris in 2008; UberCab in San Francisco; the fights with regulators; growth and losses.",
+  "images": [
+   "Travis Kalanick",
+   "Uber"
+  ]
+ },
+ {
+  "slug": "bytedance-tiktok",
+  "type": "origin",
+  "region": "global",
+  "subject": "ByteDance",
+  "angle": "Zhang Yiming started ByteDance in a Beijing apartment in 2012 with a news app; Douyin and TikTok; the most valuable startup in the world.",
+  "images": [
+   "ByteDance",
+   "TikTok"
+  ]
+ },
+ {
+  "slug": "hugging-face-chatbot",
+  "type": "origin",
+  "region": "global",
+  "subject": "Hugging Face",
+  "angle": "Started as a chatbot app for teenagers; pivoted to open-source AI tools; became the home of open AI models.",
+  "images": [
+   "Hugging Face"
+  ]
+ },
+ {
+  "slug": "netflix-dvd",
+  "type": "origin",
+  "region": "global",
+  "subject": "Netflix",
+  "angle": "DVDs by mail in 1997, the subscription model, the pivot to streaming, and the decision to make its own shows.",
+  "images": [
+   "Reed Hastings",
+   "Netflix"
+  ]
+ },
+ {
+  "slug": "zerodha-bootstrapped",
+  "type": "origin",
+  "region": "india",
+  "subject": "Zerodha",
+  "angle": "Two brothers started a discount broker in 2010 with no outside money; zero brokerage on delivery trades; became India's largest broker and profitable without venture capital.",
+  "images": [
+   "Nithin Kamath",
+   "Zerodha"
+  ]
+ },
+ {
+  "slug": "infosys-10000",
+  "type": "origin",
+  "region": "india",
+  "subject": "Infosys",
+  "angle": "Seven engineers started Infosys in 1981 with ₹10,000 borrowed from Narayana Murthy's wife; years to get a phone line; the 1993 IPO; global IT giant.",
+  "images": [
+   "N. R. Narayana Murthy",
+   "Infosys Bangalore"
+  ]
+ },
+ {
+  "slug": "flipkart-books",
+  "type": "origin",
+  "region": "india",
+  "subject": "Flipkart",
+  "angle": "Two ex-Amazon engineers started selling books online from a Bangalore apartment in 2007; cash on delivery; Walmart bought a majority for $16 billion in 2018.",
+  "images": [
+   "Sachin Bansal",
+   "Binny Bansal",
+   "Flipkart"
+  ]
+ },
+ {
+  "slug": "zomato-foodiebay",
+  "type": "origin",
+  "region": "india",
+  "subject": "Zomato",
+  "angle": "Began as Foodiebay in 2008, scanning restaurant menus for colleagues at Bain; renamed Zomato; the 2021 IPO.",
+  "images": [
+   "Deepinder Goyal",
+   "Zomato"
+  ]
+ },
+ {
+  "slug": "freshworks-chennai",
+  "type": "origin",
+  "region": "india",
+  "subject": "Freshworks",
+  "angle": "Started in Chennai in 2010 as Freshdesk after a bad customer service experience; first Indian SaaS company to list on Nasdaq in 2021.",
+  "images": [
+   "Girish Mathrubootham",
+   "Freshworks"
+  ]
+ },
+ {
+  "slug": "dream11-fantasy",
+  "type": "origin",
+  "region": "india",
+  "subject": "Dream11",
+  "angle": "Started in 2008, nearly shut down, pivoted to daily fantasy sports; became India's first gaming unicorn.",
+  "images": [
+   "Dream11"
+  ]
+ },
+ {
+  "slug": "blockbuster-passed-netflix",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Blockbuster (retailer)",
+  "angle": "Blockbuster turned down buying Netflix for $50 million in 2000; went bankrupt in 2010; Netflix is worth hundreds of billions.",
+  "images": [
+   "Blockbuster Video store",
+   "Netflix"
+  ]
+ },
+ {
+  "slug": "apple-1997-microsoft",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "History of Apple Inc.",
+  "angle": "Apple was weeks from bankruptcy in 1997; Jobs returned; Microsoft invested $150 million; the iMac, iPod and iPhone followed.",
+  "images": [
+   "Steve Jobs",
+   "iMac G3"
+  ]
+ },
+ {
+  "slug": "nokia-refused-android",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Nokia",
+  "angle": "The world's biggest phone maker chose Windows Phone over Android in 2011; market share collapsed; sold its phone business to Microsoft in 2013.",
+  "images": [
+   "Nokia headquarters",
+   "Nokia 3310"
+  ]
+ },
+ {
+  "slug": "kodak-digital-camera",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Kodak",
+  "angle": "A Kodak engineer built the first digital camera in 1975; the company sat on it to protect film; bankruptcy in 2012.",
+  "images": [
+   "Kodak camera",
+   "Eastman Kodak building"
+  ]
+ },
+ {
+  "slug": "yahoo-passed-google",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Yahoo",
+  "angle": "Yahoo passed on buying Google for about $1 million in 1998 and again for $5 billion in 2002; later declined; sold to Verizon for $4.8 billion.",
+  "images": [
+   "Yahoo headquarters",
+   "Yahoo logo sign"
+  ]
+ },
+ {
+  "slug": "aws-side-business",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Amazon Web Services",
+  "angle": "Amazon's internal infrastructure became a product in 2006; AWS now makes most of Amazon's profit and powers a large share of the internet.",
+  "images": [
+   "Amazon Web Services",
+   "AWS data center"
+  ]
+ },
+ {
+  "slug": "facebook-buys-instagram",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Instagram",
+  "angle": "Facebook paid $1 billion for a 13-person company with no revenue in 2012; Instagram now brings in a huge share of Meta's revenue.",
+  "images": [
+   "Mark Zuckerberg",
+   "Instagram"
+  ]
+ },
+ {
+  "slug": "cuda-bet",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "CUDA",
+  "angle": "Nvidia spent years and billions making graphics chips programmable for general computing while Wall Street doubted it; that bet made Nvidia the AI chip company.",
+  "images": [
+   "Nvidia GPU",
+   "Jensen Huang"
+  ]
+ },
+ {
+  "slug": "microsoft-openai-2019",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "OpenAI",
+  "angle": "Microsoft's $1 billion investment in OpenAI in 2019, then more than $10 billion; how it reshaped both companies and the AI race.",
+  "images": [
+   "Satya Nadella",
+   "Sam Altman"
+  ]
+ },
+ {
+  "slug": "wework-collapse",
+  "type": "failure",
+  "region": "global",
+  "subject": "WeWork",
+  "angle": "Valued at $47 billion in 2019; the failed IPO; Adam Neumann's exit; bankruptcy in 2023.",
+  "images": [
+   "Adam Neumann",
+   "WeWork office"
+  ]
+ },
+ {
+  "slug": "theranos-fraud",
+  "type": "failure",
+  "region": "global",
+  "subject": "Theranos",
+  "angle": "Elizabeth Holmes promised blood tests from a finger prick; $9 billion valuation; the tests did not work; convicted of fraud.",
+  "images": [
+   "Elizabeth Holmes",
+   "Theranos"
+  ]
+ },
+ {
+  "slug": "ftx-collapse",
+  "type": "failure",
+  "region": "global",
+  "subject": "FTX",
+  "angle": "The crypto exchange went from a $32 billion valuation to bankruptcy in about a week in November 2022; Sam Bankman-Fried convicted.",
+  "images": [
+   "Sam Bankman-Fried",
+   "FTX Arena"
+  ]
+ },
+ {
+  "slug": "quibi-flop",
+  "type": "failure",
+  "region": "global",
+  "subject": "Quibi",
+  "angle": "Raised $1.75 billion, launched in April 2020, shut down six months later.",
+  "images": [
+   "Jeffrey Katzenberg",
+   "Meg Whitman"
+  ]
+ },
+ {
+  "slug": "juicero",
+  "type": "failure",
+  "region": "global",
+  "subject": "Juicero",
+  "angle": "A $400 wifi juicer backed by $120 million; the packs could be squeezed by hand; shut down in 2017.",
+  "images": [
+   "Juicero"
+  ]
+ },
+ {
+  "slug": "byjus-fall",
+  "type": "failure",
+  "region": "india",
+  "subject": "Byju's",
+  "angle": "India's most valuable startup at $22 billion; aggressive sales, missed accounts, lender fights; the collapse.",
+  "images": [
+   "Byju Raveendran",
+   "Byju's"
+  ]
+ },
+ {
+  "slug": "svb-collapse",
+  "type": "failure",
+  "region": "global",
+  "subject": "Collapse of Silicon Valley Bank",
+  "angle": "The bank of the startup world failed in about 48 hours in March 2023 after a run triggered on social media and group chats.",
+  "images": [
+   "Silicon Valley Bank"
+  ]
+ },
+ {
+  "slug": "petscom-bubble",
+  "type": "failure",
+  "region": "global",
+  "subject": "Pets.com",
+  "angle": "The sock puppet mascot, a Super Bowl ad, an IPO and a shutdown, all within about a year in 2000.",
+  "images": [
+   "Pets.com sock puppet",
+   "dot-com bubble"
+  ]
+ },
+ {
+  "slug": "alexnet-2012",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "AlexNet",
+  "angle": "Three researchers in Toronto trained a neural network on two gaming GPUs and crushed the 2012 ImageNet contest; deep learning took over from there.",
+  "images": [
+   "Geoffrey Hinton",
+   "Nvidia GPU"
+  ]
+ },
+ {
+  "slug": "attention-paper",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "Attention Is All You Need",
+  "angle": "A 2017 Google paper with eight authors introduced the Transformer; every modern chatbot is built on it; most authors have since left to start companies.",
+  "images": [
+   "Google Brain",
+   "Transformer neural network"
+  ]
+ },
+ {
+  "slug": "deep-blue-kasparov",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "Deep Blue versus Garry Kasparov",
+  "angle": "In 1997 an IBM machine beat the world chess champion; what the match did and did not prove.",
+  "images": [
+   "Garry Kasparov",
+   "Deep Blue IBM"
+  ]
+ },
+ {
+  "slug": "alphago-lee-sedol",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "AlphaGo versus Lee Sedol",
+  "angle": "In 2016 DeepMind's AlphaGo beat the Go world champion 4-1; move 37; Lee Sedol later retired saying AI cannot be defeated.",
+  "images": [
+   "Lee Sedol",
+   "Go board game"
+  ]
+ },
+ {
+  "slug": "chatgpt-100m",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "ChatGPT",
+  "angle": "Launched as a low-key research preview in November 2022; a million users in five days; 100 million in two months, the fastest ever.",
+  "images": [
+   "ChatGPT",
+   "OpenAI"
+  ]
+ },
+ {
+  "slug": "eliza-1966",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "ELIZA",
+  "angle": "A 1966 MIT program that pretended to be a therapist with simple pattern matching; people confided in it; its creator was alarmed.",
+  "images": [
+   "Joseph Weizenbaum",
+   "ELIZA computer program"
+  ]
+ },
+ {
+  "slug": "dartmouth-1956",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "Dartmouth workshop",
+  "angle": "The 1956 summer workshop where the term artificial intelligence was coined; the founders expected to make major progress in one summer.",
+  "images": [
+   "Dartmouth College",
+   "John McCarthy computer scientist"
+  ]
+ },
+ {
+  "slug": "ai-winter",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "AI winter",
+  "angle": "Twice, AI hype collapsed and funding vanished for years; what triggered the winters and what ended them.",
+  "images": [
+   "Perceptron Mark I",
+   "Lisp machine"
+  ]
+ },
+ {
+  "slug": "imagenet-fei-fei",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "ImageNet",
+  "angle": "Fei-Fei Li built a dataset of 14 million labelled images when most researchers thought data was not the problem; it enabled the deep learning breakthrough.",
+  "images": [
+   "Fei-Fei Li",
+   "ImageNet"
+  ]
+ },
+ {
+  "slug": "alphafold-nobel",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "AlphaFold",
+  "angle": "DeepMind's AI solved the 50-year-old protein folding problem; predictions for 200 million proteins; a Nobel Prize in Chemistry in 2024.",
+  "images": [
+   "Demis Hassabis",
+   "Protein structure"
+  ]
+ }
+]

@@ -9,7 +9,7 @@ on:
         description: Content category for this slot
         required: true
         type: choice
-        options: [india, india-tech, global, ai, tech, vc, fact, science-or-story, roundup-morning, roundup-evening]
+        options: [india, india-tech, global, ai, tech, vc, fact, science-or-story, roundup-morning, roundup-evening, story]
       mode:
         description: publish = live post, handoff = Telegram + shortcut, dry = upload only, render-only = build only
         required: true

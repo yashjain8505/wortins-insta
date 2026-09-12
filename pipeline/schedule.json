@@ -1,5 +1,5 @@
 {
-  "_comment": "REFERENCE ONLY: live schedule is Supabase pg_cron (gh-insta-*). Keys UTC. Segment = AI + startups/VC. All handoff.",
+  "_comment": "REFERENCE ONLY: live schedule is Supabase pg_cron (gh-insta-*). Keys UTC. AI + startups. 2 briefs, 5 news, 3 evergreen stories. All handoff.",
   "0 2 * * *": {
     "ist": "07:30",
     "category": "roundup-morning",
@@ -12,22 +12,22 @@
   },
   "0 5 * * *": {
     "ist": "10:30",
-    "category": "vc",
+    "category": "story",
     "mode": "handoff"
   },
   "30 6 * * *": {
     "ist": "12:00",
-    "category": "india-tech",
+    "category": "vc",
     "mode": "handoff"
   },
   "0 8 * * *": {
     "ist": "13:30",
-    "category": "ai",
+    "category": "story",
     "mode": "handoff"
   },
   "30 9 * * *": {
     "ist": "15:00",
-    "category": "vc",
+    "category": "india-tech",
     "mode": "handoff"
   },
   "0 11 * * *": {
@@ -37,12 +37,12 @@
   },
   "30 12 * * *": {
     "ist": "18:00",
-    "category": "india-tech",
+    "category": "vc",
     "mode": "handoff"
   },
   "0 14 * * *": {
     "ist": "19:30",
-    "category": "ai",
+    "category": "story",
     "mode": "handoff"
   },
   "30 15 * * *": {

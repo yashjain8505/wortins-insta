@@ -20,6 +20,8 @@ const before = newestQueueDir();
 
 if (category === 'fact') {
   run('node', ['run-fact.mjs']);
+} else if (category === 'story') {
+  run('node', ['story.mjs']);
 } else if (category === 'roundup-morning' || category === 'roundup-evening') {
   run('node', ['curate.mjs']);
   run('node', ['roundup.mjs', '--edition', category.split('-')[1]]);

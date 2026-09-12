@@ -17,7 +17,8 @@ const brand = JSON.parse(fs.readFileSync(path.join(__dirname, 'brand.json'), 'ut
 const esc = (s) => String(s ?? '')
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 // ==text== -> acid highlight span
-const rich = (s) => esc(s).replace(/==([^=]+)==/g, '<span class="hl">$1</span>');
+// strip stray quote marks the model sometimes leaves after a ==highlight==
+const rich = (s) => esc(String(s ?? '').replace(/(==[^=]+==)['"\u2019]/g, '$1')).replace(/==([^=]+)==/g, '<span class="hl">$1</span>');
 
 const tpl = (name) => fs.readFileSync(path.join(__dirname, 'templates', name), 'utf8');
 const fill = (html, vars) =>
@@ -86,7 +87,7 @@ pages.push(fill(tpl(isNews ? 'news-cover.html' : 'facts-cover.html'), {
     DOTS: dots(total, i + 1),
     SOURCE: esc(story.source ? `source: ${story.source}` : ''),
     PHOTO: slide.photo ? photoDataUri(slide.photo) : photo,
-    CREDIT: esc(story.photoCredit ?? ''),
+    CREDIT: esc(slide.photoCredit ?? story.photoCredit ?? ''),
   }));
 });
 }

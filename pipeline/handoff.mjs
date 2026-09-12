@@ -21,6 +21,10 @@ const sbHeaders = { Authorization: `Bearer ${KEY}`, apikey: KEY };
 
 const MUSIC = {
   india: 'Minimal cinematic beat. In IG music search: "cinematic ambient"',
+  'origin story': 'Inspiring cinematic build. In IG music search: "inspirational cinematic"',
+  'turning point': 'Tense cinematic. In IG music search: "cinematic tension"',
+  'what went wrong': 'Dark, slow. In IG music search: "dramatic piano"',
+  'ai history': 'Dreamy ambient. In IG music search: "dreamy ambient"',
   roundup: 'News-desk energy. In IG music search: "cinematic ambient" or "upbeat lofi"',
   global: 'Minimal cinematic beat. In IG music search: "cinematic ambient"',
   ai: 'Lo-fi chill beat. In IG music search: "lofi"',
