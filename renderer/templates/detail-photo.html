@@ -6,38 +6,34 @@
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; }
-  .slide { width: 1080px; height: 1350px; background: #F3ECDA; color: #1B1712; display: flex; flex-direction: column; font-family: 'Space Grotesk', Arial, sans-serif; overflow: hidden; }
-  .photo { height: 580px; flex-shrink: 0; background-color: #1B1712; background-image: url("{{PHOTO}}"); background-size: cover; background-position: {{PHOTO_POS}}; display: flex; flex-direction: column; justify-content: space-between; padding: 56px 64px 24px 64px; }
-  .logo { height: 42px; align-self: flex-start; }
-  .credit { align-self: flex-end; font-size: 16px; color: rgba(243,236,218,0.85); background: rgba(27,23,18,0.55); padding: 6px 10px; }
-  .panel { flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 48px 64px 56px 64px; }
-  .content { display: flex; flex-direction: column; gap: 26px; align-items: flex-start; }
+  /* full-bleed photo, text written over it; a deep bottom gradient keeps the words readable */
+  .slide { width: 1080px; height: 1350px; background-color: #1B1712; background-image: linear-gradient(180deg, rgba(27,23,18,0.18) 0%, rgba(27,23,18,0.10) 30%, rgba(27,23,18,0.62) 52%, rgba(27,23,18,0.93) 68%, rgba(27,23,18,0.99) 100%), url("{{PHOTO}}"); background-size: cover; background-position: {{PHOTO_POS}}; color: #F3ECDA; display: flex; flex-direction: column; justify-content: space-between; padding: 72px 64px 64px 64px; font-family: 'Space Grotesk', Arial, sans-serif; overflow: hidden; }
+  .top { display: flex; justify-content: flex-start; align-items: center; }
+  .logo { height: 46px; }
+  .block { display: flex; flex-direction: column; gap: 26px; align-items: flex-start; }
   .label { background: #9C2B1D; color: #F3ECDA; font-weight: 700; font-size: 22px; letter-spacing: 3px; padding: 10px 18px; text-transform: uppercase; }
-  .heading { font-weight: 700; font-size: 54px; line-height: 1.14; color: #1B1712; }
+  .heading { font-weight: 700; font-size: 60px; line-height: 1.14; text-shadow: 0 2px 18px rgba(0,0,0,0.45); }
   .heading .hl { background: #9C2B1D; color: #F3ECDA; padding: 0 12px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
-  .body { font-size: 28px; line-height: 1.55; color: #514A40; max-width: 920px; }
-  .bottom { display: flex; justify-content: space-between; align-items: center; }
+  .body { font-size: 29px; line-height: 1.55; color: rgba(243,236,218,0.88); max-width: 920px; text-shadow: 0 1px 10px rgba(0,0,0,0.5); }
+  .bottom { display: flex; justify-content: space-between; align-items: flex-end; width: 100%; margin-top: 10px; }
+  .stack { display: flex; flex-direction: column; gap: 6px; }
+  .muted { font-size: 22px; font-weight: 500; color: rgba(243,236,218,0.65); }
+  .credit { font-size: 16px; color: rgba(243,236,218,0.42); }
   .dots { display: flex; gap: 14px; align-items: center; }
-  .dot { width: 16px; height: 16px; background: rgba(27,23,18,0.15); }
-  .dot.on { background: #9C2B1D; }
-  .muted { font-size: 22px; font-weight: 500; color: #8A8171; }
+  .dot { width: 16px; height: 16px; background: rgba(243,236,218,0.3); }
+  .dot.on { background: #F3ECDA; }
 </style>
 </head>
 <body>
 <div class="slide">
-  <div class="photo">
-    <img class="logo" src="{{LOGO_CREAM}}">
-    <div class="credit">{{CREDIT}}</div>
-  </div>
-  <div class="panel">
-    <div class="content">
-      <div class="label">{{LABEL}}</div>
-      <div class="heading">{{HEADING}}</div>
-      <div class="body">{{BODY}}</div>
-    </div>
+  <div class="top"><img class="logo" src="{{LOGO_CREAM}}"></div>
+  <div class="block">
+    <div class="label">{{LABEL}}</div>
+    <div class="heading">{{HEADING}}</div>
+    <div class="body">{{BODY}}</div>
     <div class="bottom">
+      <div class="stack"><div class="muted">{{SOURCE}}</div><div class="credit">{{CREDIT}}</div></div>
       <div class="dots">{{DOTS}}</div>
-      <div class="muted">{{SOURCE}}</div>
     </div>
   </div>
 </div>
