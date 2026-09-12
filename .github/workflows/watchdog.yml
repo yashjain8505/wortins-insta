@@ -23,7 +23,7 @@ jobs:
           total=$(echo "$runs" | jq 'length')
           okc=$(echo "$runs" | jq '[.[] | select(.conclusion=="success")] | length')
           failed=$(echo "$runs" | jq -r '[.[] | select(.conclusion=="failure" or .conclusion=="cancelled" or .conclusion=="timed_out") | .displayTitle | sub("slot: ";"") | sub(" \\(handoff\\)";"")] | join(", ")')
-          expected=10
+          expected=6
           if [ "$total" -lt "$expected" ]; then missing=" · $((expected - total)) slot(s) never started (scheduler/token?)"; else missing=""; fi
           [ -n "$failed" ] && failed=" · failed: $failed"
           msg="📊 Wortins today: $okc/$expected posts delivered$failed$missing"
