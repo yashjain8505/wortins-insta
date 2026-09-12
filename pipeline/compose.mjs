@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { askClaude, extractJson } from './lib/claude.mjs';
-import { fetchArticle, downloadImage } from './lib/article.mjs';
+import { fetchArticle, downloadPhotoSet } from './lib/article.mjs';
 
 const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 const args = process.argv.slice(2);
@@ -25,13 +25,12 @@ for (const pick of pool) {
   try {
     const article = await fetchArticle(pick.link);
     if (article.text.length < 400) throw new Error('article text too thin');
-    const imageUrl = article.ogImage || pick.image;
-    if (!imageUrl) throw new Error('no image available');
-
     const slug = pick.key.split(' ').slice(0, 5).join('-');
     const dir = path.join('queue', `${new Date().toISOString().slice(0, 10)}-${slug}`);
     fs.mkdirSync(dir, { recursive: true });
-    await downloadImage(imageUrl, path.join(dir, 'photo.jpg'), { minBytes: config.minPhotoBytes });
+    const photos = await downloadPhotoSet([...(article.images ?? []), pick.image].filter(Boolean), dir, 4, { minBytes: config.minPhotoBytes });
+    if (!photos.length) throw new Error('no usable image');
+    console.log(`  photos: ${photos.length}`);
 
     const prompt = `You write Instagram news carousels for an Indian general audience. Turn this article into a carousel story. Use ONLY facts stated in the article text below — never invent numbers, names or claims. If the article lacks a concrete hook, still write the strongest honest version.
 
@@ -66,8 +65,17 @@ Reply with ONLY JSON:
       !story.source ? 'source' : null;
     if (bad) throw new Error(`story validation failed: ${bad}`);
 
-    story.photo = 'photo.jpg';
+    story.photo = photos[0];
+    story.photos = photos;
     story.photoCredit = `Photo: ${pick.source}`;
+    // Spread photos across the detail slides. Extra article photos go on slides in order;
+    // with only one photo, reuse it on the first and last detail slide with different crops.
+    const extra = photos.slice(1);
+    story.slides.forEach((s, i) => {
+      if (extra.length) { s.photo = extra[i % extra.length]; s.photoPos = 'center'; }
+      else if (i === 0) { s.photo = photos[0]; s.photoPos = 'center 15%'; }
+      else if (i === story.slides.length - 1) { s.photo = photos[0]; s.photoPos = 'center 85%'; }
+    });
     story.articleUrl = pick.link;
     fs.writeFileSync(path.join(dir, 'story.json'), JSON.stringify(story, null, 2));
 

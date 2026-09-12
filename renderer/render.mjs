@@ -76,15 +76,16 @@ pages.push(fill(tpl(isNews ? 'news-cover.html' : 'facts-cover.html'), {
 }));
 // detail slides
 (story.slides ?? []).forEach((slide, i) => {
-  pages.push(fill(tpl('detail.html'), {
+  pages.push(fill(tpl(slide.photo ? 'detail-photo.html' : 'detail.html'), {
     ...common,
+    PHOTO_POS: esc(slide.photoPos ?? 'center'),
     LABEL: esc(slide.label),
     HEADING: rich(slide.heading),
     BODY: esc(slide.body),
     COUNTER: counter(i + 2, total),
     DOTS: dots(total, i + 1),
     SOURCE: esc(story.source ? `source: ${story.source}` : ''),
-    PHOTO: photo,
+    PHOTO: slide.photo ? photoDataUri(slide.photo) : photo,
     CREDIT: esc(story.photoCredit ?? ''),
   }));
 });
