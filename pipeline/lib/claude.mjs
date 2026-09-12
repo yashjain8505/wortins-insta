@@ -1,7 +1,18 @@
 // Ask Claude via the local CLI (runs on the Claude Code subscription — no API key).
 import { execFile } from 'node:child_process';
 
-export function askClaude(prompt, { model = 'sonnet', timeoutMs = 240000 } = {}) {
+// Fallback chain: a failed Opus call (rate limit, usage window, timeout) retries on Sonnet; Sonnet retries once on Sonnet.
+export async function askClaude(prompt, { model = 'sonnet', timeoutMs = 240000 } = {}) {
+  try { return await askOnce(prompt, { model, timeoutMs }); }
+  catch (e) {
+    const fallback = model === 'opus' ? 'sonnet' : model;
+    console.log(`claude ${model} failed (${String(e.message).slice(0, 80)}), retrying on ${fallback}`);
+    await new Promise(r => setTimeout(r, 20000));
+    return askOnce(prompt, { model: fallback, timeoutMs });
+  }
+}
+
+function askOnce(prompt, { model, timeoutMs }) {
   return new Promise((resolve, reject) => {
     const child = execFile(
       'claude',

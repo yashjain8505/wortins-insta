@@ -1,0 +1,31 @@
+name: Daily scorecard
+on:
+  schedule:
+    - cron: "15 16 * * *"   # ~21:45 IST (GitHub cron may run late; this is a safety net, not the scheduler)
+  workflow_dispatch:
+jobs:
+  scorecard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      actions: read
+    steps:
+      - name: Count today's slot runs and report to Telegram
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TG: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+          REPO: ${{ github.repository }}
+        run: |
+          today=$(date -u +%Y-%m-%d)
+          runs=$(gh run list -R "$REPO" --workflow slot.yml --limit 40 --json displayTitle,conclusion,createdAt,event \
+            --jq "[.[] | select(.createdAt | startswith(\"$today\")) | select(.displayTitle | startswith(\"slot:\"))]")
+          total=$(echo "$runs" | jq 'length')
+          okc=$(echo "$runs" | jq '[.[] | select(.conclusion=="success")] | length')
+          failed=$(echo "$runs" | jq -r '[.[] | select(.conclusion!="success" and .conclusion!=null) | .displayTitle] | join(", ")')
+          expected=10
+          if [ "$total" -lt "$expected" ]; then missing=" · $((expected - total)) slot(s) never started (scheduler/token?)"; else missing=""; fi
+          [ -n "$failed" ] && failed=" · failed: $failed"
+          msg="📊 Wortins today: $okc/$expected posts delivered$failed$missing"
+          echo "$msg"
+          curl -s -X POST "https://api.telegram.org/bot$TG/sendMessage" -d chat_id="$CHAT" --data-urlencode text="$msg" > /dev/null
