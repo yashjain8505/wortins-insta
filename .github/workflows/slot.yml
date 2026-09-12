@@ -77,7 +77,13 @@ jobs:
           echo "waiting ${d}s"
           sleep $d
 
+      - name: Preflight (every path checked before anything runs for real)
+        working-directory: pipeline
+        run: node preflight.mjs
+
       - name: Run slot
+        id: run
+        continue-on-error: true
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
@@ -90,6 +96,35 @@ jobs:
           PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome
         working-directory: pipeline
         run: node run-slot.mjs "${{ steps.slot.outputs.category }}" --${{ steps.slot.outputs.mode }}
+
+      - name: Retry once (a flaky feed, photo or model call should not cost the slot)
+        id: retry
+        if: steps.run.outcome == 'failure'
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: me
+          SUPABASE_URL: https://zrjbzowohsgjbrhsldfi.supabase.co
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          SUPABASE_BUCKET: insta-slides
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome
+        working-directory: pipeline
+        run: |
+          echo "first attempt failed, retrying in 60s"
+          sleep 60
+          node run-slot.mjs "${{ steps.slot.outputs.category }}" --${{ steps.slot.outputs.mode }}
+
+      - name: Alert Yash on Telegram if the slot still failed
+        if: failure()
+        env:
+          TG: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          curl -s -X POST "https://api.telegram.org/bot$TG/sendMessage" \
+            -d chat_id="$CHAT" \
+            --data-urlencode text="⚠️ Wortins post FAILED: ${{ steps.slot.outputs.category }} slot (tried twice). No post for this slot. Logs: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" > /dev/null
 
       - name: Persist state (seen/published/facts-used)
         if: always()

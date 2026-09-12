@@ -1,0 +1,28 @@
+name: Check
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['pipeline/state/**', 'pipeline/stories-bank.json']
+  workflow_dispatch:
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: npm ci --prefix pipeline
+        env: { PUPPETEER_SKIP_DOWNLOAD: "1" }
+      - run: npm install -g @anthropic-ai/claude-code
+      - name: Preflight against the real internet
+        working-directory: pipeline
+        run: node preflight.mjs
+      - name: Alert Yash if a push broke the pipeline
+        if: failure()
+        env:
+          TG: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          curl -s -X POST "https://api.telegram.org/bot$TG/sendMessage" -d chat_id="$CHAT" \
+            --data-urlencode text="⚠️ Wortins pipeline: a code push failed preflight. Slots may fail until fixed. ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" > /dev/null
