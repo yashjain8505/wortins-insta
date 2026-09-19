@@ -825,5 +825,214 @@
    "Microsoft headquarters Redmond",
    "Twitter app icon phone"
   ]
+ },
+ {
+  "slug": "dell-dorm-1000",
+  "type": "origin",
+  "region": "global",
+  "subject": "Michael Dell",
+  "angle": "At 19, Michael Dell was upgrading PCs from his University of Texas dorm room, registered PC's Limited in 1984 with $1,000, and dropped out after hitting six-figure monthly sales; the insight was simply selling direct and skipping the reseller markup.",
+  "images": [
+   "Michael Dell",
+   "University of Texas at Austin campus"
+  ]
+ },
+ {
+  "slug": "paypal-palm-pilot",
+  "type": "origin",
+  "region": "global",
+  "subject": "PayPal",
+  "angle": "Confinity's original 1998 product was beaming money between Palm Pilots by infrared; the web demo was an afterthought that took over, and the 2000 merger with Elon Musk's X.com produced the PayPal Mafia that later built YouTube, LinkedIn, Yelp and SpaceX.",
+  "images": [
+   "Palm Pilot PDA",
+   "PayPal headquarters San Jose"
+  ]
+ },
+ {
+  "slug": "oracle-cia-project",
+  "type": "origin",
+  "region": "global",
+  "subject": "Oracle Corporation",
+  "angle": "Larry Ellison, a college dropout, started the company in 1977 with about $2,000 of his own money and named the product after a CIA project code-named Oracle he had worked on; he built it on an IBM research paper IBM itself published and was slow to commercialise.",
+  "images": [
+   "Larry Ellison",
+   "Oracle Corporation headquarters Redwood Shores"
+  ]
+ },
+ {
+  "slug": "cisco-kitchen-table",
+  "type": "origin",
+  "region": "global",
+  "subject": "Sandy Lerner",
+  "angle": "A married Stanford couple, Sandy Lerner and Leonard Bosack, built routers at their kitchen table in 1984 to connect campus networks, were turned down by 70+ VCs, and were both pushed out after the IPO — selling their stake for about $170 million, most of which Lerner gave away.",
+  "images": [
+   "Sandy Lerner",
+   "Cisco Systems headquarters San Jose"
+  ]
+ },
+ {
+  "slug": "spotify-piracy-answer",
+  "type": "origin",
+  "region": "global",
+  "subject": "Spotify",
+  "angle": "Daniel Ek had already made enough money to retire in his twenties and was bored; he started Spotify in 2006 on the premise that the only way to beat piracy was to be faster than piracy, then spent roughly two years fighting labels for licences before launch.",
+  "images": [
+   "Daniel Ek",
+   "Spotify headquarters Stockholm"
+  ]
+ },
+ {
+  "slug": "huawei-21000-yuan",
+  "type": "origin",
+  "region": "global",
+  "subject": "Ren Zhengfei",
+  "angle": "Laid off from the Chinese army's engineering corps and reportedly cheated out of money in a trading deal, Ren Zhengfei founded Huawei in a Shenzhen apartment in 1987 with about 21,000 yuan, reselling phone switches before reverse-engineering his own.",
+  "images": [
+   "Ren Zhengfei",
+   "Huawei headquarters Shenzhen"
+  ]
+ },
+ {
+  "slug": "figma-four-years-silent",
+  "type": "origin",
+  "region": "global",
+  "subject": "Figma",
+  "angle": "Dylan Field dropped out of Brown on a Thiel Fellowship in 2012 and spent nearly four years building before Figma launched publicly in 2016 — a browser-based design tool everyone said was impossible; Adobe later agreed to buy it for about $20 billion and regulators killed the deal, costing Adobe a $1 billion breakup fee.",
+  "images": [
+   "Dylan Field",
+   "Figma company logo"
+  ]
+ },
+ {
+  "slug": "fedex-blackjack",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Frederick W. Smith",
+  "angle": "With FedEx down to about $5,000 and unable to fuel its planes, Fred Smith flew to Las Vegas and played blackjack, returning with roughly $27,000 — enough for one more week; the overnight-delivery idea came from a Yale term paper that reportedly got an average grade.",
+  "images": [
+   "Frederick W. Smith",
+   "FedEx cargo aircraft"
+  ]
+ },
+ {
+  "slug": "evernote-one-day-left",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Evernote",
+  "angle": "In the 2008 crash Evernote's funding collapsed and Phil Libin decided to shut down; that night a Swedish user emailed offering to invest, wired $500,000, and the company survived to reach 100 million users.",
+  "images": [
+   "Phil Libin",
+   "Evernote logo"
+  ]
+ },
+ {
+  "slug": "tencent-almost-sold-qq",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Tencent",
+  "angle": "Pony Ma's OICQ grew so fast in 1999 that he could not afford servers and tried to sell the whole thing for around 1 million yuan; no buyer paid his price, IDG and PCCW invested instead, and QQ became the base of a company worth hundreds of billions.",
+  "images": [
+   "Ma Huateng",
+   "Tencent headquarters Shenzhen"
+  ]
+ },
+ {
+  "slug": "nintendo-playing-cards",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Nintendo",
+  "angle": "Founded in 1889 to make hanafuda playing cards, Nintendo tried taxis, instant rice and love hotels before a maintenance engineer named Gunpei Yokoi was noticed tinkering with an extending arm toy — the pivot that led to Game & Watch, Donkey Kong and the NES.",
+  "images": [
+   "Nintendo hanafuda cards",
+   "Nintendo headquarters Kyoto"
+  ]
+ },
+ {
+  "slug": "segway-bigger-than-internet",
+  "type": "failure",
+  "region": "global",
+  "subject": "Dean Kamen",
+  "angle": "Before launch, Kamen's secret 'Ginger' had Steve Jobs and John Doerr predicting it would be bigger than the PC and reach $1 billion in sales faster than any product ever; the Segway sold roughly 140,000 units in two decades, and the businessman who later bought the company died riding one off a cliff.",
+  "images": [
+   "Dean Kamen",
+   "Segway personal transporter"
+  ]
+ },
+ {
+  "slug": "zenefits-macro-cheat",
+  "type": "failure",
+  "region": "global",
+  "subject": "TriNet Zenefits",
+  "angle": "Zenefits went from zero to a $4.5 billion valuation in about two years, then it emerged that its CEO had built a browser macro letting salespeople skip the mandatory hours of insurance-licensing training; he resigned in 2016 and the company was later sold for a fraction of its peak.",
+  "images": [
+   "Parker Conrad",
+   "Zenefits office San Francisco"
+  ]
+ },
+ {
+  "slug": "google-glass-glasshole",
+  "type": "failure",
+  "region": "global",
+  "subject": "Google Glass",
+  "angle": "Google jumped Glass out of a plane onto the 2012 I/O stage, charged $1,500 for the Explorer Edition, and put it on the cover of Vogue — then bars banned it, 'Glasshole' entered the language, and the consumer version was pulled in 2015.",
+  "images": [
+   "Google Glass device",
+   "Sergey Brin wearing Google Glass"
+  ]
+ },
+ {
+  "slug": "bharatpe-grover-ouster",
+  "type": "failure",
+  "region": "india",
+  "subject": "BharatPe",
+  "angle": "BharatPe's co-founder Ashneer Grover went from fintech unicorn builder and Shark Tank India star to being forced out in 2022 after a leaked abusive call to a bank employee and a governance review alleging inflated vendor invoices; the company later sued him and his family.",
+  "images": [
+   "Ashneer Grover",
+   "BharatPe logo"
+  ]
+ },
+ {
+  "slug": "lovelace-no-pretensions",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "Ada Lovelace",
+  "angle": "In her 1843 notes on Babbage's Analytical Engine — translation notes three times longer than the original paper — Ada Lovelace wrote the first published algorithm and added the line 'the Analytical Engine has no pretensions whatever to originate anything', the objection Turing was still answering a century later.",
+  "images": [
+   "Ada Lovelace portrait",
+   "Analytical Engine Babbage"
+  ]
+ },
+ {
+  "slug": "perceptron-1958-hype",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "Perceptron",
+  "angle": "The New York Times reported in 1958 that Frank Rosenblatt's perceptron, a room-sized machine wired with potentiometers turned by motors, would soon walk, talk, see, write and reproduce itself; Minsky and Papert's 1969 book showed it could not even learn XOR, and funding died for a decade.",
+  "images": [
+   "Mark I Perceptron machine",
+   "Frank Rosenblatt"
+  ]
+ },
+ {
+  "slug": "mechanical-turk-hoax",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "Mechanical Turk",
+  "angle": "From 1770 a chess-playing automaton beat Napoleon and Benjamin Franklin and toured Europe for 84 years, convincing audiences a machine could think — there was a human hidden inside on a sliding seat, and Amazon later named its human-labour service after it.",
+  "images": [
+   "Mechanical Turk chess automaton engraving",
+   "Wolfgang von Kempelen"
+  ]
+ },
+ {
+  "slug": "raj-reddy-turing",
+  "type": "ai-history",
+  "region": "india",
+  "subject": "Raj Reddy",
+  "angle": "Raj Reddy left a Madras engineering college for Stanford, became one of John McCarthy's first AI students, and in 1994 became the first person of Asian origin to win the Turing Award — for speech recognition and robotics work done decades before anyone talked to a computer for real.",
+  "images": [
+   "Raj Reddy",
+   "Carnegie Mellon University campus"
+  ]
  }
 ]
