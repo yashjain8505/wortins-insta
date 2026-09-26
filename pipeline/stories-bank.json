@@ -1034,5 +1034,214 @@
    "Raj Reddy",
    "Carnegie Mellon University campus"
   ]
+ },
+ {
+  "slug": "mailchimp-bootstrapped-12b",
+  "type": "origin",
+  "region": "global",
+  "subject": "Mailchimp",
+  "angle": "Ben Chestnut and Dan Kurzius started Mailchimp in 2001 as a side project inside their web design agency in Atlanta. They never took venture capital and sold to Intuit in 2021 for about $12 billion.",
+  "images": [
+   "Ben Chestnut Mailchimp",
+   "Mailchimp headquarters Atlanta"
+  ]
+ },
+ {
+  "slug": "nike-car-trunk-35-dollar-swoosh",
+  "type": "origin",
+  "region": "global",
+  "subject": "Nike, Inc.",
+  "angle": "Phil Knight and his coach Bill Bowerman started Blue Ribbon Sports in 1964, and Knight sold Japanese running shoes out of his car trunk at track meets. The Swoosh logo was designed by student Carolyn Davidson for $35.",
+  "images": [
+   "Phil Knight",
+   "Bill Bowerman"
+  ]
+ },
+ {
+  "slug": "github-bootstrapped-to-microsoft",
+  "type": "origin",
+  "region": "global",
+  "subject": "GitHub",
+  "angle": "GitHub was started in 2008 as a weekend project and ran profitably with no outside money for four years. Then came a $100 million round from Andreessen Horowitz, and in 2018 Microsoft bought it for $7.5 billion.",
+  "images": [
+   "Chris Wanstrath",
+   "GitHub office San Francisco"
+  ]
+ },
+ {
+  "slug": "anthropic-openai-walkout",
+  "type": "origin",
+  "region": "global",
+  "subject": "Anthropic",
+  "angle": "In 2021 siblings Dario and Daniela Amodei left OpenAI with several colleagues to start an AI safety company. It became one of the most valuable AI labs in the world, with billions invested by Amazon and Google.",
+  "images": [
+   "Dario Amodei",
+   "Daniela Amodei"
+  ]
+ },
+ {
+  "slug": "drew-houston-forgot-usb",
+  "type": "origin",
+  "region": "global",
+  "subject": "Drew Houston",
+  "angle": "Drew Houston kept forgetting his USB drive, so he wrote the first Dropbox code on a bus. Steve Jobs later offered to buy the company for a nine-figure sum and called it a feature, not a product. Houston said no.",
+  "images": [
+   "Drew Houston",
+   "Dropbox headquarters"
+  ]
+ },
+ {
+  "slug": "samsung-dried-fish",
+  "type": "origin",
+  "region": "global",
+  "subject": "Samsung",
+  "angle": "Lee Byung-chul started Samsung in 1938 in Daegu as a small trading company that sold dried fish, groceries and noodles. It later became the world's largest maker of smartphones and memory chips.",
+  "images": [
+   "Lee Byung-chul",
+   "Samsung Daegu 1938"
+  ]
+ },
+ {
+  "slug": "dhirubhai-aden-petrol-pump",
+  "type": "origin",
+  "region": "india",
+  "subject": "Dhirubhai Ambani",
+  "angle": "A schoolteacher's son who worked as a petrol station attendant in Aden. He came back to Bombay with very little money, started a yarn-trading business, and built Reliance into India's largest private company.",
+  "images": [
+   "Dhirubhai Ambani",
+   "Reliance Industries"
+  ]
+ },
+ {
+  "slug": "bhavish-bad-cab-ride",
+  "type": "origin",
+  "region": "india",
+  "subject": "Bhavish Aggarwal",
+  "angle": "An IIT Bombay graduate at Microsoft Research had a terrible rented-car trip in which the driver stopped mid-journey to demand more money. He started Ola Cabs in 2010, and it grew into India's biggest ride-hailing company.",
+  "images": [
+   "Bhavish Aggarwal",
+   "Ola Cabs taxi"
+  ]
+ },
+ {
+  "slug": "pixar-jobs-nearly-sold",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Pixar",
+  "angle": "Steve Jobs bought Lucasfilm's graphics group for $5 million in 1986 and kept putting his own money into it as it lost cash selling hardware. He nearly sold it several times. Then Toy Story (1995) and the IPO made him a billionaire, and Disney bought Pixar for $7.4 billion.",
+  "images": [
+   "Pixar Animation Studios Emeryville",
+   "Steve Jobs Pixar"
+  ]
+ },
+ {
+  "slug": "lego-near-bankruptcy-2003",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "The Lego Group",
+  "angle": "In 2003 Lego was losing hundreds of millions and close to bankruptcy after spreading into theme parks, clothing and video games. Jørgen Vig Knudstorp cut back to the core brick and turned it into the world's most profitable toy company.",
+  "images": [
+   "Jørgen Vig Knudstorp",
+   "Lego headquarters Billund"
+  ]
+ },
+ {
+  "slug": "nadella-microsoft-reset",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Satya Nadella",
+  "angle": "A Hyderabad-born engineer became Microsoft's third CEO in 2014, when it was seen as a fading giant. He pushed a 'learn-it-all' culture, cloud first and a bet on OpenAI, and Microsoft's value grew roughly tenfold.",
+  "images": [
+   "Satya Nadella",
+   "Microsoft Redmond campus"
+  ]
+ },
+ {
+  "slug": "marvel-bankruptcy-1996",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Marvel Entertainment",
+  "angle": "Marvel filed for bankruptcy in 1996 and sold film rights to characters like Spider-Man and the X-Men to stay alive. It then bet on making its own films with Iron Man (2008), and Disney bought it for $4 billion in 2009.",
+  "images": [
+   "Marvel Studios logo",
+   "Iron Man 2008 premiere"
+  ]
+ },
+ {
+  "slug": "groupon-rejected-google-6b",
+  "type": "failure",
+  "region": "global",
+  "subject": "Groupon",
+  "angle": "In 2010 Groupon turned down a roughly $6 billion offer from Google, the fastest-growing company ever at the time. After the IPO its value collapsed, and founder Andrew Mason was fired with a famously frank memo.",
+  "images": [
+   "Andrew Mason Groupon",
+   "Groupon office Chicago"
+  ]
+ },
+ {
+  "slug": "kingfisher-airlines-crash",
+  "type": "failure",
+  "region": "india",
+  "subject": "Kingfisher Airlines",
+  "angle": "Vijay Mallya's glamorous airline bought Air Deccan, lost money every year, and was grounded in 2012 with unpaid salaries and large bank debts. Mallya left for the UK.",
+  "images": [
+   "Kingfisher Airlines Airbus",
+   "Vijay Mallya"
+  ]
+ },
+ {
+  "slug": "fyre-festival-cheese-sandwich",
+  "type": "failure",
+  "region": "global",
+  "subject": "Fyre Festival",
+  "angle": "A luxury music festival in the Bahamas sold with supermodel Instagram posts; guests found disaster-relief tents and cheese sandwiches. Founder Billy McFarland was jailed for wire fraud.",
+  "images": [
+   "Fyre Festival Exuma",
+   "Billy McFarland"
+  ]
+ },
+ {
+  "slug": "watson-jeopardy-2011",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "IBM Watson",
+  "angle": "In 2011 IBM's Watson beat Jeopardy! champions Ken Jennings and Brad Rutter. Jennings wrote 'I for one welcome our new computer overlords.' IBM's later promise to use Watson to cure cancer fell apart.",
+  "images": [
+   "IBM Watson Jeopardy",
+   "Ken Jennings"
+  ]
+ },
+ {
+  "slug": "shakey-first-thinking-robot",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "Shakey the robot",
+  "angle": "Built at SRI from 1966 to 1972 and called the first electronic person by Life magazine. It was the first mobile robot that reasoned about its own actions, and it gave us the A* search algorithm.",
+  "images": [
+   "Shakey the robot",
+   "SRI International Menlo Park"
+  ]
+ },
+ {
+  "slug": "darpa-grand-challenge-zero-finishers",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "DARPA Grand Challenge",
+  "angle": "In the 2004 desert race for self-driving cars no vehicle finished, and the best one got about 7 miles. A year later Stanford's Stanley won the $2 million prize, and many of those engineers went on to Google's self-driving car project.",
+  "images": [
+   "Stanley robot vehicle Stanford",
+   "DARPA Grand Challenge 2005"
+  ]
+ },
+ {
+  "slug": "hinton-quits-google",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "Geoffrey Hinton",
+  "angle": "The 'godfather of deep learning' kept working on neural networks through decades of doubt. In 2023 he left Google so he could speak freely about AI's risks, and in 2024 he won the Nobel Prize in Physics.",
+  "images": [
+   "Geoffrey Hinton",
+   "Geoffrey Hinton Nobel"
+  ]
  }
 ]
