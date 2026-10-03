@@ -1243,5 +1243,192 @@
    "Geoffrey Hinton",
    "Geoffrey Hinton Nobel"
   ]
+ },
+ {
+  "slug": "hp-garage-538-dollars",
+  "type": "origin",
+  "region": "global",
+  "subject": "HP Garage",
+  "angle": "In 1939 Bill Hewlett and David Packard started HP in a rented Palo Alto garage with about $538. One of their first big customers was Disney, which bought eight audio oscillators for Fantasia. The garage is now called the birthplace of Silicon Valley.",
+  "images": [
+   "HP Garage Palo Alto",
+   "Hewlett Packard founders"
+  ]
+ },
+ {
+  "slug": "sony-failed-rice-cooker",
+  "type": "origin",
+  "region": "global",
+  "subject": "Sony",
+  "angle": "Masaru Ibuka and Akio Morita started Tokyo Tsushin Kogyo in a bombed-out Tokyo department store in 1946. Their first product, an electric rice cooker, burned or undercooked the rice. They then built Japan's first tape recorder and transistor radio and renamed the company Sony.",
+  "images": [
+   "Masaru Ibuka",
+   "Akio Morita"
+  ]
+ },
+ {
+  "slug": "soichiro-honda-rejected-by-toyota",
+  "type": "origin",
+  "region": "global",
+  "subject": "Soichiro Honda",
+  "angle": "Toyota rejected Soichiro Honda's piston rings. Then his factory was bombed in the war and later wrecked by an earthquake, and he sold what was left to Toyota. In 1948 he founded Honda by fitting small engines to bicycles.",
+  "images": [
+   "Soichiro Honda",
+   "Honda Cub motorcycle"
+  ]
+ },
+ {
+  "slug": "reddit-yc-rejection-fake-users",
+  "type": "origin",
+  "region": "global",
+  "subject": "Reddit",
+  "angle": "Y Combinator rejected Steve Huffman and Alexis Ohanian's food-ordering idea. Paul Graham called them back and told them to build 'the front page of the internet'. Early on they filled the site with fake accounts, and they sold it to Condé Nast about 16 months after launch.",
+  "images": [
+   "Alexis Ohanian",
+   "Steve Huffman"
+  ]
+ },
+ {
+  "slug": "youtube-dating-site-zoo",
+  "type": "origin",
+  "region": "global",
+  "subject": "YouTube",
+  "angle": "Three former PayPal employees started YouTube in 2005, briefly as a video dating site. The first upload was the 19-second 'Me at the zoo'. Google bought the company for $1.65 billion about 18 months later.",
+  "images": [
+   "Jawed Karim",
+   "Chad Hurley Steve Chen"
+  ]
+ },
+ {
+  "slug": "kiran-mazumdar-shaw-brewmaster",
+  "type": "origin",
+  "region": "india",
+  "subject": "Kiran Mazumdar-Shaw",
+  "angle": "Kiran Mazumdar-Shaw trained as a master brewer in Australia, but Indian breweries would not hire a woman for the job. In 1978 she started Biocon in a Bangalore garage with about ₹10,000 and built it into a biotech giant.",
+  "images": [
+   "Kiran Mazumdar-Shaw",
+   "Biocon Bangalore"
+  ]
+ },
+ {
+  "slug": "schultz-217-investor-nos",
+  "type": "origin",
+  "region": "global",
+  "subject": "Howard Schultz",
+  "angle": "Howard Schultz pitched his espresso-bar chain Il Giornale to 242 investors, and 217 said no. In 1987 he bought Starbucks from its founders for about $3.8 million.",
+  "images": [
+   "Howard Schultz",
+   "first Starbucks Pike Place"
+  ]
+ },
+ {
+  "slug": "xerox-parc-jobs-visit",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Xerox Alto",
+  "angle": "In 1979 Xerox let Steve Jobs see the Alto's graphical interface and mouse in return for buying pre-IPO Apple shares. Apple turned those ideas into the Lisa and the Macintosh, while Xerox never sold the Alto commercially.",
+  "images": [
+   "Xerox Alto",
+   "Xerox PARC"
+  ]
+ },
+ {
+  "slug": "fujifilm-survived-kodak-died",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Fujifilm",
+  "angle": "Digital cameras wiped out the film business for both Kodak and Fujifilm. Fujifilm survived by putting its film chemistry into cosmetics, medical imaging and pharmaceuticals, while Kodak went bankrupt.",
+  "images": [
+   "Fujifilm headquarters Tokyo",
+   "Shigetaka Komori"
+  ]
+ },
+ {
+  "slug": "jio-free-data-100m",
+  "type": "turning-point",
+  "region": "india",
+  "subject": "Jio",
+  "angle": "Reliance Jio launched in September 2016 with free data and calls. It signed up about 100 million subscribers in roughly 170 days, which pushed down data prices across India and forced the telecom industry to consolidate.",
+  "images": [
+   "Reliance Jio",
+   "Mukesh Ambani"
+  ]
+ },
+ {
+  "slug": "justintv-to-twitch",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Justin.tv",
+  "angle": "Justin Kan wore a camera on his head and streamed his whole life, all day, every day. The lifecasting site struggled, but its gaming section took off and was spun out as Twitch, which Amazon bought for $970 million in 2014.",
+  "images": [
+   "Justin Kan",
+   "Justin.tv"
+  ]
+ },
+ {
+  "slug": "webvan-grocery-bust",
+  "type": "failure",
+  "region": "global",
+  "subject": "Webvan",
+  "angle": "Webvan raised about $800 million and built huge warehouses for online grocery delivery, reaching a multibillion-dollar valuation at its IPO. It went bankrupt in 2001, and the same idea worked years later.",
+  "images": [
+   "Webvan",
+   "Webvan truck"
+  ]
+ },
+ {
+  "slug": "myspace-580m-to-35m",
+  "type": "failure",
+  "region": "global",
+  "subject": "Myspace",
+  "angle": "News Corp bought Myspace for $580 million in 2005, when it was the world's biggest social network. Facebook then overtook it, and News Corp sold it in 2011 for about $35 million.",
+  "images": [
+   "Tom Anderson Myspace",
+   "Myspace logo"
+  ]
+ },
+ {
+  "slug": "iridium-5-billion-bankruptcy",
+  "type": "failure",
+  "region": "global",
+  "subject": "Iridium Communications",
+  "angle": "Motorola spent about $5 billion putting 66 satellites into orbit for a global phone network. The handsets cost around $3,000 and calls cost dollars a minute, and the company went bankrupt in 1999, months after launch.",
+  "images": [
+   "Iridium satellite",
+   "Iridium satellite phone"
+  ]
+ },
+ {
+  "slug": "tata-nano-one-lakh-car",
+  "type": "failure",
+  "region": "india",
+  "subject": "Tata Nano",
+  "angle": "Ratan Tata promised a ₹1 lakh car for Indian families. Protests in Singur forced the factory to move to Sanand. The car got labelled 'the cheapest car', buyers stayed away, and production quietly ended in 2018.",
+  "images": [
+   "Tata Nano",
+   "Ratan Tata"
+  ]
+ },
+ {
+  "slug": "traf-o-data-gates-first-flop",
+  "type": "failure",
+  "region": "global",
+  "subject": "Traf-O-Data",
+  "angle": "Before Microsoft, teenage Bill Gates and Paul Allen started Traf-O-Data to analyse traffic-counter tapes. The machine failed during a demo for a county official, and the business went nowhere, but what they learned led directly to Microsoft.",
+  "images": [
+   "Bill Gates young",
+   "Paul Allen"
+  ]
+ },
+ {
+  "slug": "cyc-40-years-common-sense",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "Cyc",
+  "angle": "In 1984 Doug Lenat began typing common sense into a computer by hand, one rule at a time. Cyc grew to millions of assertions over decades, and it is the opposite bet to today's large language models.",
+  "images": [
+   "Douglas Lenat",
+   "Cyc"
+  ]
  }
 ]
