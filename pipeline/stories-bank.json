@@ -1430,5 +1430,214 @@
    "Douglas Lenat",
    "Cyc"
   ]
+ },
+ {
+  "slug": "lamborghini-insulted-by-enzo",
+  "type": "origin",
+  "region": "global",
+  "subject": "Ferruccio Lamborghini",
+  "angle": "A rich tractor maker complained to Enzo Ferrari about the faulty clutch in his Ferrari and was brushed off. In 1963 he started his own sports car company to beat Ferrari.",
+  "images": [
+   "Ferruccio Lamborghini",
+   "Lamborghini 350 GT"
+  ]
+ },
+ {
+  "slug": "facemash-harvard-hack",
+  "type": "origin",
+  "region": "global",
+  "subject": "History of Facebook",
+  "angle": "In 2003 a Harvard sophomore, Mark Zuckerberg, took photos from the dorm directories and built a site where students rated who was 'hotter'. It drew hundreds of visitors and thousands of photo views within hours. Harvard shut it down and he faced disciplinary charges. Months later he launched TheFacebook.",
+  "images": [
+   "Mark Zuckerberg 2005",
+   "Kirkland House Harvard"
+  ]
+ },
+ {
+  "slug": "linux-just-a-hobby",
+  "type": "origin",
+  "region": "global",
+  "subject": "History of Linux",
+  "angle": "On 25 August 1991 a 21-year-old Helsinki student, Linus Torvalds, posted on Usenet that he was writing a free operating system: 'just a hobby, won't be big and professional like gnu'. Linux now runs most servers, every top supercomputer and Android.",
+  "images": [
+   "Linus Torvalds",
+   "University of Helsinki"
+  ]
+ },
+ {
+  "slug": "arm-twelve-engineers-barn",
+  "type": "origin",
+  "region": "global",
+  "subject": "Arm Holdings",
+  "angle": "Arm was spun out of Acorn Computers in 1990 as a joint venture with Apple and VLSI, with 12 engineers working from a barn near Cambridge. It never made its own chips; it licensed designs instead, and those designs are now in almost every smartphone in the world.",
+  "images": [
+   "Arm Holdings Cambridge headquarters",
+   "Acorn Archimedes"
+  ]
+ },
+ {
+  "slug": "colonel-sanders-started-in-his-sixties",
+  "type": "origin",
+  "region": "global",
+  "subject": "Colonel Sanders",
+  "angle": "When a new interstate highway bypassed his roadside restaurant, Harland Sanders was in his sixties and nearly broke. He drove around selling his fried chicken recipe to restaurants as a franchise, and in 1964 he sold Kentucky Fried Chicken for $2 million.",
+  "images": [
+   "Colonel Sanders",
+   "Harland Sanders Cafe Corbin Kentucky"
+  ]
+ },
+ {
+  "slug": "red-bull-jet-lag-tonic",
+  "type": "origin",
+  "region": "global",
+  "subject": "Dietrich Mateschitz",
+  "angle": "An Austrian toothpaste marketer found the Thai energy drink Krating Daeng cured his jet lag. In 1984 he and its maker, Chaleo Yoovidhya, each put in about $500,000 for 49% of Red Bull and turned it into a global brand.",
+  "images": [
+   "Dietrich Mateschitz",
+   "Krating Daeng"
+  ]
+ },
+ {
+  "slug": "swiggy-after-bundl-failed",
+  "type": "origin",
+  "region": "india",
+  "subject": "Swiggy",
+  "angle": "Sriharsha Majety and Nandan Reddy first built Bundl, a logistics startup that failed. They used what they learned to start Swiggy in Bengaluru in 2014 with its own fleet of delivery riders. Swiggy grew into a food and quick-commerce giant and went public in 2024.",
+  "images": [
+   "Swiggy delivery",
+   "Swiggy Bangalore"
+  ]
+ },
+ {
+  "slug": "ford-two-failed-car-companies",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Henry Ford",
+  "angle": "Henry Ford's first car company, the Detroit Automobile Company, collapsed. His second, the Henry Ford Company, pushed him out and became Cadillac. His third attempt was Ford Motor Company, founded in 1903, which built the Model T and the moving assembly line.",
+  "images": [
+   "Henry Ford",
+   "Ford Model T"
+  ]
+ },
+ {
+  "slug": "disney-lost-oswald-made-mickey",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Oswald the Lucky Rabbit",
+  "angle": "In 1928 Walt Disney found out that Universal owned his hit character Oswald and that his distributor had hired away most of his animators. On the train home he came up with a new mouse, Mickey. Disney only got Oswald back in 2006.",
+  "images": [
+   "Oswald the Lucky Rabbit",
+   "Walt Disney 1920s"
+  ]
+ },
+ {
+  "slug": "tata-buys-jaguar-land-rover",
+  "type": "turning-point",
+  "region": "india",
+  "subject": "Ratan Tata",
+  "angle": "Ford once looked down on Tata's car business. In 2008 Tata Motors bought Jaguar Land Rover from a struggling Ford for about $2.3 billion and turned it into one of the group's biggest earners.",
+  "images": [
+   "Ratan Tata",
+   "Jaguar Land Rover"
+  ]
+ },
+ {
+  "slug": "demonetisation-paytm-overnight",
+  "type": "turning-point",
+  "region": "india",
+  "subject": "2016 Indian banknote demonetisation",
+  "angle": "On the night of 8 November 2016, India withdrew the ₹500 and ₹1,000 notes, about 86% of the cash in circulation, with four hours' notice. Digital wallets like Paytm suddenly signed up millions of users, and India's digital payments era began.",
+  "images": [
+   "2016 Indian banknote demonetisation queue",
+   "Paytm"
+  ]
+ },
+ {
+  "slug": "pentium-fdiv-475-million",
+  "type": "failure",
+  "region": "global",
+  "subject": "Pentium FDIV bug",
+  "angle": "In 1994 a math professor, Thomas Nicely, found that Intel's new Pentium got some divisions wrong. Intel first played it down, then had to offer replacements and took a $475 million charge.",
+  "images": [
+   "Intel Pentium FDIV",
+   "Intel Pentium 60 MHz"
+  ]
+ },
+ {
+  "slug": "enron-smartest-guys",
+  "type": "failure",
+  "region": "global",
+  "subject": "Enron scandal",
+  "angle": "Fortune named Enron 'America's Most Innovative Company' six years in a row. In 2001 it collapsed into what was then the largest bankruptcy in US history after its accounting was exposed, and its auditor Arthur Andersen went down with it.",
+  "images": [
+   "Enron logo",
+   "Enron headquarters Houston"
+  ]
+ },
+ {
+  "slug": "better-place-battery-swap",
+  "type": "failure",
+  "region": "global",
+  "subject": "Better Place (company)",
+  "angle": "Shai Agassi raised about $850 million to build battery-swapping stations for electric cars in Israel and Denmark. Very few cars were sold, and the company went bankrupt in 2013.",
+  "images": [
+   "Better Place battery switch station",
+   "Shai Agassi"
+  ]
+ },
+ {
+  "slug": "new-coke-79-days",
+  "type": "failure",
+  "region": "global",
+  "subject": "New Coke",
+  "angle": "In 1985 Coca-Cola replaced its formula after winning blind taste tests. The public backlash was huge, and the company brought back 'Coca-Cola Classic' 79 days later. It is still a classic lesson that the data is not the whole customer.",
+  "images": [
+   "New Coke can",
+   "Coca-Cola Classic 1985"
+  ]
+ },
+ {
+  "slug": "housing-com-rahul-yadav",
+  "type": "failure",
+  "region": "india",
+  "subject": "Housing.com",
+  "angle": "IIT Bombay dropouts built a hot property portal that SoftBank backed. Then 26-year-old CEO Rahul Yadav insulted an investor in public emails and offered his shares to employees. He was fired in 2015, and the company was later sold for a small part of its peak value.",
+  "images": [
+   "Housing.com",
+   "Rahul Yadav Housing.com"
+  ]
+ },
+ {
+  "slug": "lenet-read-the-cheques",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "LeNet",
+  "angle": "In the 1990s at Bell Labs, Yann LeCun's convolutional network learned to read handwritten digits. It was used commercially to read millions of bank cheques, decades before deep learning became fashionable.",
+  "images": [
+   "Yann LeCun",
+   "Bell Labs Holmdel"
+  ]
+ },
+ {
+  "slug": "eugene-goostman-turing-test",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "Eugene Goostman",
+  "angle": "In 2014 a chatbot pretending to be a 13-year-old Ukrainian boy convinced 33% of judges at a Royal Society event that it was human. Headlines said the Turing test had been passed; critics said it was a trick.",
+  "images": [
+   "Royal Society London",
+   "Alan Turing statue"
+  ]
+ },
+ {
+  "slug": "td-gammon-taught-itself",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "TD-Gammon",
+  "angle": "In 1992 IBM's Gerald Tesauro built a neural network that learned backgammon by playing itself. It reached near world-champion level and changed how human experts play some openings, more than twenty years before AlphaGo.",
+  "images": [
+   "Backgammon board",
+   "IBM Thomas J. Watson Research Center"
+  ]
  }
 ]
