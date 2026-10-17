@@ -1639,5 +1639,192 @@
    "Backgammon board",
    "IBM Thomas J. Watson Research Center"
   ]
+ },
+ {
+  "slug": "warby-parker-lost-glasses",
+  "type": "origin",
+  "region": "global",
+  "subject": "Warby Parker",
+  "angle": "Four Wharton MBA students started Warby Parker in 2010 after one of them lost his glasses while backpacking and couldn't afford new ones. They sold glasses online for $95 a pair, and a GQ write-up at launch gave them a waitlist of about 20,000 people.",
+  "images": [
+   "Warby Parker store",
+   "Neil Blumenthal"
+  ]
+ },
+ {
+  "slug": "craigslist-email-list",
+  "type": "origin",
+  "region": "global",
+  "subject": "Craigslist",
+  "angle": "In 1995 Craig Newmark started an email list of San Francisco events for friends. It grew into one of the most-visited sites on the internet, and he still kept it mostly free and turned down banner-ad money that could have made it worth billions.",
+  "images": [
+   "Craig Newmark",
+   "Craigslist headquarters San Francisco"
+  ]
+ },
+ {
+  "slug": "zip2-slept-in-office",
+  "type": "origin",
+  "region": "global",
+  "subject": "Zip2",
+  "angle": "Elon and Kimbal Musk started Zip2 in 1995 with about $28,000 from their father. Elon slept in the office and showered at the YMCA, and Compaq bought the company in 1999 for about $307 million, with Elon getting around $22 million.",
+  "images": [
+   "Elon Musk 1999",
+   "Kimbal Musk"
+  ]
+ },
+ {
+  "slug": "under-armour-grandmas-basement",
+  "type": "origin",
+  "region": "global",
+  "subject": "Under Armour",
+  "angle": "Kevin Plank was a college football player who got tired of sweat-soaked cotton shirts. In 1996 he started Under Armour in his grandmother's basement, using up his credit cards and selling shirts out of his car to equipment managers.",
+  "images": [
+   "Kevin Plank",
+   "Under Armour headquarters Baltimore"
+  ]
+ },
+ {
+  "slug": "nupedia-21-articles",
+  "type": "origin",
+  "region": "global",
+  "subject": "Nupedia",
+  "angle": "Jimmy Wales and Larry Sanger's expert-reviewed online encyclopedia finished only about 21 articles in its first year. A wiki started on the side in 2001 to feed it, called Wikipedia, quickly overtook it.",
+  "images": [
+   "Jimmy Wales",
+   "Larry Sanger"
+  ]
+ },
+ {
+  "slug": "sam-walton-lost-his-lease",
+  "type": "origin",
+  "region": "global",
+  "subject": "Sam Walton",
+  "angle": "Sam Walton turned a franchise variety store in Newport, Arkansas into a regional success, then lost it in 1950 when the landlord refused to renew the lease. He started over in Bentonville and opened the first Walmart in 1962 at age 44.",
+  "images": [
+   "Sam Walton",
+   "Walton's 5 and 10 Bentonville"
+  ]
+ },
+ {
+  "slug": "kurien-milkman-who-didnt-drink-milk",
+  "type": "origin",
+  "region": "india",
+  "subject": "Verghese Kurien",
+  "angle": "An engineer was sent to a government dairy in Anand and meant to leave. Instead he stayed, built Amul and ran Operation Flood, which made India the world's largest milk producer, even though he famously didn't drink milk himself.",
+  "images": [
+   "Verghese Kurien",
+   "Amul dairy Anand"
+  ]
+ },
+ {
+  "slug": "physics-wallah-youtube-unicorn",
+  "type": "origin",
+  "region": "india",
+  "subject": "Physics Wallah",
+  "angle": "Alakh Pandey dropped out of engineering college and started teaching physics cheaply on YouTube. In 2022 Physics Wallah raised $100 million in its first funding round and became a unicorn, while staying profitable in an edtech market where Byju's was burning cash.",
+  "images": [
+   "Alakh Pandey",
+   "Physics Wallah"
+  ]
+ },
+ {
+  "slug": "rovio-52nd-game-angry-birds",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Rovio Entertainment",
+  "angle": "Rovio made about 51 games before Angry Birds and was close to bankruptcy, with staff cut sharply. Angry Birds came out in 2009 and became one of the most downloaded mobile games ever.",
+  "images": [
+   "Rovio Entertainment office Espoo",
+   "Angry Birds"
+  ]
+ },
+ {
+  "slug": "masayoshi-son-alibaba-bet",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Masayoshi Son",
+  "angle": "Masayoshi Son lost about $70 billion of personal wealth when the dot-com bubble burst. His roughly $20 million bet on Jack Ma's Alibaba in 2000 grew to be worth more than $50 billion and kept SoftBank alive.",
+  "images": [
+   "Masayoshi Son",
+   "SoftBank headquarters Tokyo"
+  ]
+ },
+ {
+  "slug": "lisa-su-amd-2-dollar-stock",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Lisa Su",
+  "angle": "Lisa Su became CEO of AMD in 2014, when its stock was around $2 to $3 and the company was written off. Her bet on the Zen chip design took AMD past Intel in market value.",
+  "images": [
+   "Lisa Su",
+   "AMD Ryzen"
+  ]
+ },
+ {
+  "slug": "air-india-back-to-tata",
+  "type": "turning-point",
+  "region": "india",
+  "subject": "Air India",
+  "angle": "J. R. D. Tata started the airline in 1932 as Tata Airlines, and the government nationalised it in 1953. After decades of losses, Tata won it back in 2021 for about ₹18,000 crore, 68 years later.",
+  "images": [
+   "J. R. D. Tata",
+   "Air India aircraft"
+  ]
+ },
+ {
+  "slug": "chouinard-gave-away-patagonia",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Yvon Chouinard",
+  "angle": "A climber who started out forging his own pitons ran the company behind the 'Don't Buy This Jacket' ad. In 2022 he gave away Patagonia, worth about $3 billion, saying 'Earth is now our only shareholder.'",
+  "images": [
+   "Yvon Chouinard",
+   "Patagonia store"
+  ]
+ },
+ {
+  "slug": "magic-leap-6-billion-headset",
+  "type": "failure",
+  "region": "global",
+  "subject": "Magic Leap",
+  "angle": "Magic Leap raised more than $3 billion and was valued at over $6 billion on secret demos of a whale jumping out of a gym floor. Its first headset reportedly sold only about 6,000 units in six months, against a target of 100,000.",
+  "images": [
+   "Magic Leap One headset",
+   "Rony Abovitz"
+  ]
+ },
+ {
+  "slug": "jawbone-billion-dollar-liquidation",
+  "type": "failure",
+  "region": "global",
+  "subject": "Jawbone (company)",
+  "angle": "Jawbone raised about $1 billion and was once valued at around $3 billion for its speakers and fitness bands. It lost to Fitbit and Apple and went into liquidation in 2017, one of the costliest venture-backed failures.",
+  "images": [
+   "Jawbone UP fitness band",
+   "Jawbone Jambox"
+  ]
+ },
+ {
+  "slug": "builder-ai-natasha-humans",
+  "type": "failure",
+  "region": "global",
+  "subject": "Builder.ai",
+  "angle": "Builder.ai, backed by Microsoft, raised more than $450 million to build apps with an AI assistant called 'Natasha.' It went insolvent in 2025 after its revenue was found to be overstated and reports said much of the 'AI' work was done by human engineers.",
+  "images": [
+   "Sachin Dev Duggal",
+   "Builder.ai"
+  ]
+ },
+ {
+  "slug": "clever-hans-horse-math",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "Clever Hans",
+  "angle": "Around 1904 a German horse seemed to do arithmetic until a psychologist, Oskar Pfungst, showed it was reading tiny cues from the person asking. AI researchers still say 'Clever Hans' when a model gets the right answer for the wrong reason.",
+  "images": [
+   "Clever Hans horse",
+   "Wilhelm von Osten"
+  ]
  }
 ]
