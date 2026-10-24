@@ -1826,5 +1826,192 @@
    "Clever Hans horse",
    "Wilhelm von Osten"
   ]
+ },
+ {
+  "slug": "salesforce-end-of-software",
+  "type": "origin",
+  "region": "global",
+  "subject": "Salesforce",
+  "angle": "Marc Benioff, an Oracle executive, started Salesforce in 1999 in a rented San Francisco apartment. He sold software over the internet instead of on CDs and marketed it with a 'No Software' slogan, which helped make SaaS the standard business model.",
+  "images": [
+   "Marc Benioff",
+   "Salesforce Tower San Francisco"
+  ]
+ },
+ {
+  "slug": "lenskart-left-microsoft",
+  "type": "origin",
+  "region": "india",
+  "subject": "Lenskart",
+  "angle": "Peyush Bansal turned down a Microsoft career in the US and in 2010 started selling eyeglasses online in India, where millions of people needed glasses and didn't have them. Lenskart grew into an omnichannel unicorn.",
+  "images": [
+   "Peyush Bansal",
+   "Lenskart store"
+  ]
+ },
+ {
+  "slug": "haldirams-bikaner-bhujia-shop",
+  "type": "origin",
+  "region": "india",
+  "subject": "Haldiram's",
+  "angle": "Haldiram's began in 1937 as a small bhujia shop in Bikaner run by Ganga Bishan Agarwal. Family splits and expansion to Kolkata, Nagpur and Delhi turned it into one of India's biggest snack brands.",
+  "images": [
+   "Haldiram's Bikaner",
+   "Haldiram's store"
+  ]
+ },
+ {
+  "slug": "kamprad-ikea-at-17",
+  "type": "origin",
+  "region": "global",
+  "subject": "Ingvar Kamprad",
+  "angle": "As a boy in rural Sweden, Kamprad sold matches bought in bulk, then seeds and pens. At 17, in 1943, he founded IKEA, named after his initials, his family farm and his village, and later bet everything on flat-pack furniture.",
+  "images": [
+   "Ingvar Kamprad",
+   "IKEA Älmhult"
+  ]
+ },
+ {
+  "slug": "toyoda-loom-funded-toyota",
+  "type": "origin",
+  "region": "global",
+  "subject": "Sakichi Toyoda",
+  "angle": "Toyota started as an automatic loom maker. Sakichi Toyoda's loom patent was sold to Britain's Platt Brothers, and that money helped his son Kiichiro start making cars.",
+  "images": [
+   "Sakichi Toyoda",
+   "Toyoda automatic loom"
+  ]
+ },
+ {
+  "slug": "mistral-seed-no-product",
+  "type": "origin",
+  "region": "global",
+  "subject": "Mistral AI",
+  "angle": "Three French researchers from DeepMind and Meta founded Mistral AI in April 2023. Within weeks they raised a €105 million seed round with no product, one of Europe's largest ever.",
+  "images": [
+   "Arthur Mensch",
+   "Mistral AI logo"
+  ]
+ },
+ {
+  "slug": "scale-ai-mit-dropout",
+  "type": "origin",
+  "region": "global",
+  "subject": "Scale AI",
+  "angle": "Alexandr Wang dropped out of MIT at 19 to label data for self-driving cars. Scale AI became critical AI infrastructure, he became the world's youngest self-made billionaire, and Meta later made a huge investment in the company.",
+  "images": [
+   "Alexandr Wang",
+   "Scale AI"
+  ]
+ },
+ {
+  "slug": "altman-fired-five-days",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Removal of Sam Altman from OpenAI",
+  "angle": "In November 2023 OpenAI's board fired Sam Altman over a video call. Nearly all employees threatened to quit and join Microsoft, and within about five days he was back as CEO with a new board.",
+  "images": [
+   "Sam Altman",
+   "OpenAI headquarters San Francisco"
+  ]
+ },
+ {
+  "slug": "india-1991-gold-pledge",
+  "type": "turning-point",
+  "region": "india",
+  "subject": "1991 Indian economic crisis",
+  "angle": "In 1991 India had only about three weeks of import cover left and flew tonnes of gold to London as collateral for a loan. The crisis forced the liberalisation that made India's modern startup economy possible.",
+  "images": [
+   "Manmohan Singh",
+   "Reserve Bank of India"
+  ]
+ },
+ {
+  "slug": "tylenol-31-million-recall",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Chicago Tylenol murders",
+  "angle": "In 1982 poisoned Tylenol capsules killed seven people. Johnson & Johnson recalled about 31 million bottles and introduced tamper-resistant packaging, and the response became the textbook case of crisis management.",
+  "images": [
+   "Tylenol bottle",
+   "Johnson & Johnson headquarters"
+  ]
+ },
+ {
+  "slug": "ballmer-laughed-at-iphone",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "IPhone (1st generation)",
+  "angle": "Steve Jobs unveiled the iPhone in January 2007 as 'an iPod, a phone and an internet communicator.' Steve Ballmer laughed at a $500 phone with no keyboard, and it went on to reshape the whole industry.",
+  "images": [
+   "Steve Jobs iPhone 2007",
+   "Original iPhone"
+  ]
+ },
+ {
+  "slug": "pebble-kickstarter-to-fitbit",
+  "type": "failure",
+  "region": "global",
+  "subject": "Pebble (watch)",
+  "angle": "Pebble raised a record $10 million on Kickstarter in 2012 and reportedly turned down a large acquisition offer. In 2016 it was sold for parts to Fitbit for a fraction of that.",
+  "images": [
+   "Pebble smartwatch",
+   "Eric Migicovsky"
+  ]
+ },
+ {
+  "slug": "ltcm-nobel-genius-failure",
+  "type": "failure",
+  "region": "global",
+  "subject": "Long-Term Capital Management",
+  "angle": "A hedge fund run by star traders and two Nobel-winning economists lost about $4.6 billion in months in 1998. The New York Fed had to organise a Wall Street rescue of about $3.6 billion.",
+  "images": [
+   "Myron Scholes",
+   "Federal Reserve Bank of New York"
+  ]
+ },
+ {
+  "slug": "dunzo-reliance-to-unpaid-salaries",
+  "type": "failure",
+  "region": "india",
+  "subject": "Dunzo",
+  "angle": "Google-backed Dunzo pioneered quick delivery in Bengaluru and raised $200 million led by Reliance Retail in 2022. Two years later it was delaying salaries and its business had shrunk to almost nothing.",
+  "images": [
+   "Dunzo delivery",
+   "Bengaluru traffic"
+  ]
+ },
+ {
+  "slug": "do-kwon-terra-40-billion",
+  "type": "failure",
+  "region": "global",
+  "subject": "Do Kwon",
+  "angle": "Do Kwon's 'stable' coin TerraUSD and its sister token Luna collapsed in May 2022, wiping out about $40 billion. Kwon fled, was arrested in Montenegro with a fake passport and was extradited to the US.",
+  "images": [
+   "Do Kwon",
+   "Terraform Labs"
+  ]
+ },
+ {
+  "slug": "unimate-first-robot-worker",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "Unimate",
+  "angle": "In 1961 the first industrial robot arm, Unimate, invented by George Devol and sold by Joseph Engelberger, started work on a General Motors assembly line handling hot die-cast metal.",
+  "images": [
+   "Unimate robot",
+   "Joseph Engelberger"
+  ]
+ },
+ {
+  "slug": "alphazero-four-hours-chess",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "AlphaZero",
+  "angle": "In 2017 DeepMind's AlphaZero was given only the rules of chess. After about four hours of playing itself it crushed Stockfish, the strongest chess engine, and did the same in shogi and Go.",
+  "images": [
+   "DeepMind",
+   "Chess board"
+  ]
  }
 ]
