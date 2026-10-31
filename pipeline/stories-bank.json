@@ -2013,5 +2013,181 @@
    "DeepMind",
    "Chess board"
   ]
+ },
+ {
+  "slug": "ray-kroc-milkshake-salesman-at-52",
+  "type": "origin",
+  "region": "global",
+  "subject": "Ray Kroc",
+  "angle": "Ray Kroc was a 52-year-old milkshake-mixer salesman when he visited the McDonald brothers' San Bernardino stand in 1954. He franchised it, bought the brothers out for $2.7 million in 1961, and built the world's biggest restaurant chain.",
+  "images": [
+   "Ray Kroc",
+   "McDonald's museum Des Plaines"
+  ]
+ },
+ {
+  "slug": "berners-lee-vague-but-exciting",
+  "type": "origin",
+  "region": "global",
+  "subject": "Tim Berners-Lee",
+  "angle": "In 1989 a CERN physicist proposed the World Wide Web, and his boss scribbled 'Vague but exciting' on the proposal. Berners-Lee never patented the web and gave it away for free.",
+  "images": [
+   "Tim Berners-Lee",
+   "CERN NeXT computer first web server"
+  ]
+ },
+ {
+  "slug": "gmail-april-fools-1gb",
+  "type": "origin",
+  "region": "global",
+  "subject": "Gmail",
+  "angle": "Paul Buchheit built Gmail as a side project at Google. It launched on 1 April 2004 with 1 GB of free storage, so much more than rivals offered that many people thought it was an April Fools' joke.",
+  "images": [
+   "Paul Buchheit",
+   "Gmail logo"
+  ]
+ },
+ {
+  "slug": "post-it-failed-glue",
+  "type": "origin",
+  "region": "global",
+  "subject": "Post-it note",
+  "angle": "In 1968 3M chemist Spencer Silver made a glue that was too weak to be useful. Years later his colleague Art Fry used it to keep bookmarks from falling out of his church hymnal, and the Post-it launched in 1980.",
+  "images": [
+   "Post-it notes",
+   "3M headquarters Maplewood"
+  ]
+ },
+ {
+  "slug": "edwin-land-daughters-question",
+  "type": "origin",
+  "region": "global",
+  "subject": "Edwin H. Land",
+  "angle": "In 1943 Edwin Land's three-year-old daughter asked why she couldn't see a photo right after it was taken. Her question led to the Polaroid instant camera in 1948. Land had dropped out of Harvard and went on to hold more than 500 patents.",
+  "images": [
+   "Edwin H. Land",
+   "Polaroid Land camera"
+  ]
+ },
+ {
+  "slug": "gerstner-elephants-can-dance",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Lou Gerstner",
+  "angle": "IBM lost about $8 billion in 1993 and was about to be broken into pieces. Lou Gerstner, an outsider from RJR Nabisco, kept the company together and pivoted it to services. He later told the story in 'Who Says Elephants Can't Dance?'.",
+  "images": [
+   "Lou Gerstner",
+   "IBM headquarters Armonk"
+  ]
+ },
+ {
+  "slug": "maggi-ban-2015-comeback",
+  "type": "turning-point",
+  "region": "india",
+  "subject": "Maggi",
+  "angle": "In 2015 Indian regulators banned Maggi noodles over lead and MSG claims. Nestlé recalled and destroyed hundreds of crores' worth of stock and its market share collapsed, but the brand returned within months and won back its lead.",
+  "images": [
+   "Maggi noodles",
+   "Maggi instant noodles India"
+  ]
+ },
+ {
+  "slug": "netscape-ipo-1995",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Netscape",
+  "angle": "Netscape went public in August 1995 when it had barely any profits, and its stock nearly doubled on the first day. The 24-year-old Marc Andreessen became a paper multimillionaire, and the IPO set off the dot-com boom before Microsoft crushed the browser.",
+  "images": [
+   "Marc Andreessen",
+   "Netscape Navigator"
+  ]
+ },
+ {
+  "slug": "viagra-failed-heart-drug",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Sildenafil",
+  "angle": "Pfizer tested sildenafil as a heart drug for angina in the early 1990s, and it did poorly. Trial volunteers reported an unexpected side effect, and in 1998 it launched as Viagra, one of the fastest-selling drugs in history.",
+  "images": [
+   "Viagra pills",
+   "Pfizer Sandwich Kent"
+  ]
+ },
+ {
+  "slug": "play-doh-wallpaper-cleaner",
+  "type": "turning-point",
+  "region": "global",
+  "subject": "Play-Doh",
+  "angle": "Kutol Products made a putty for cleaning soot off wallpaper, and sales collapsed when homes switched from coal to gas heating. A nursery teacher used it for modelling in class, the company relaunched it as a toy in the 1950s, and it has since sold billions of cans.",
+  "images": [
+   "Play-Doh",
+   "Play-Doh cans"
+  ]
+ },
+ {
+  "slug": "boo-com-135m-18-months",
+  "type": "failure",
+  "region": "global",
+  "subject": "Boo.com",
+  "angle": "A London fashion e-commerce startup spent about $135 million in roughly 18 months on a slow 3D website, global launches and lavish offices. It collapsed in May 2000 and became a symbol of the dot-com crash.",
+  "images": [
+   "Boo.com",
+   "Ernst Malmsten"
+  ]
+ },
+ {
+  "slug": "nirav-modi-pnb-fraud",
+  "type": "failure",
+  "region": "india",
+  "subject": "Nirav Modi",
+  "angle": "A celebrity diamond jeweller whose brand was worn by Hollywood stars was found in 2018 at the centre of a roughly $2 billion fraud at Punjab National Bank, run through fake letters of undertaking. He fled India and was later arrested in London.",
+  "images": [
+   "Nirav Modi",
+   "Punjab National Bank"
+  ]
+ },
+ {
+  "slug": "mars-climate-orbiter-units",
+  "type": "failure",
+  "region": "global",
+  "subject": "Mars Climate Orbiter",
+  "angle": "In 1999 NASA lost a Mars spacecraft because one team's software used pound-force seconds while another team's used newton-seconds. The probe flew too close to Mars and was destroyed, in a mission costing hundreds of millions of dollars.",
+  "images": [
+   "Mars Climate Orbiter",
+   "Mars Climate Orbiter spacecraft"
+  ]
+ },
+ {
+  "slug": "logic-theorist-rejected-paper",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "Logic Theorist",
+  "angle": "In 1956 Newell, Simon and Shaw's program proved 38 of the first 52 theorems in Russell and Whitehead's Principia Mathematica, and one of its proofs was more elegant than the original. A journal refused a paper that listed the program as a co-author.",
+  "images": [
+   "Herbert A. Simon",
+   "Allen Newell"
+  ]
+ },
+ {
+  "slug": "gpt2-too-dangerous",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "GPT-2",
+  "angle": "In February 2019 OpenAI said GPT-2 was too dangerous to release in full and withheld it in stages. Within a few years far more powerful models were freely available.",
+  "images": [
+   "OpenAI logo",
+   "OpenAI office San Francisco"
+  ]
+ },
+ {
+  "slug": "google-brain-cat-neuron",
+  "type": "ai-history",
+  "region": "global",
+  "subject": "Google Brain",
+  "angle": "In 2012 Google Brain connected 16,000 processor cores and showed them 10 million YouTube thumbnails with no labels. The network learned to recognise cats on its own, a 'cat neuron' that helped convince Google to bet on deep learning.",
+  "images": [
+   "Andrew Ng",
+   "Jeff Dean Google"
+  ]
  }
 ]
